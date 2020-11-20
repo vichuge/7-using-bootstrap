@@ -1,10 +1,18 @@
 @media (min-width: 1200px) {
     .container {
         max-width: 1325px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .nav-bar {
         background-color: #ff0500;
+        padding: .3em 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+    .date {
+        font-weight: 200;
     }
 
     .img-logo {
@@ -16,4 +24,52 @@
         margin-bottom: 0;
     }
 
+    .text-right {
+        font-size: 1.1em;
+    }
+
+    .suscribe-btn {
+        background-color: #ffe400;
+        border: none;
+        border-radius: 15px;
+        padding: .1em .9em;
+        font-weight: 700;
+        margin: 0 1em;
+    }
+
+    .second-nav {
+        margin-right: 7%;
+        font-weight: 600;
+        padding: 1em 0;
+    }
+
+    .second-nav > div {
+        border-right: 1px solid #888;
+        padding: 0 1.2em;
+    }
+
+    .second-nav > div:last-child {
+        border-right: none;
+    }
+
+    .third-nav {
+        margin-right: 30%;
+        font-weight: 600;
+        font-size: .9em;
+        color: #666;
+        padding: .8em .9em;
+    }
+
+    .border {
+        padding: 0;
+    }
+
+    .search {
+        font-weight: 200;
+        color: #777;
+    }
+
+    .search > p > i {
+        padding-left: .5em;
+    }
 }
