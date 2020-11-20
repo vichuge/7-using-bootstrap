@@ -164,8 +164,8 @@ img {
 /* Section 2 */
 .row {
     margin-top: 1em;
-    margin-left: .01em;
-    padding-right: 1em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .h3-2 {
@@ -190,4 +190,31 @@ img {
 
 .second-row {
     margin-top: 2em;
+}
+
+/* Section 3 */
+.third-row {
+  margin-top: 2em;
+}
+
+.third-row > article > div {
+  padding: 0;
+}
+
+.third-row-img {
+  width: 75%;
+  height: auto;
+}
+
+.more-stories-art {
+  margin-bottom: 1em;
+}
+
+.col-three > h5 {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.col-three > p {
+  font-size: .8em;
 }
