@@ -1,11 +1,11 @@
-@media (min-width: 992px) {
-
+@media (max-width: 992px) {
+    body {
+        background-color: pink;
+    }
 }
 
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 576px) {
-
+@media (max-width: 768px) {
+    body {
+        background-color: brown;
+    }
 }
