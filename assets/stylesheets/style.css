@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1325px;
+    }
+
+    .nav-bar {
+        background-color: #ff0500;
+    }
+
+    .img-logo {
+        width: 390px;
+        height: auto;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+}
