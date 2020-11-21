@@ -356,3 +356,89 @@ img {
   margin-left: .5em;
   font-size: 1.2em
 }
+
+/* In The Magazine Section */
+
+.in-the-magazine {
+  margin: 1em 3em;
+  font-weight: 600;
+}
+
+.magazine-art {
+  margin-bottom: 3em;
+}
+
+.magazine-art > img {
+  margin-bottom: 1em;
+}
+
+.magazine-art > div {
+  display: flex;
+  font-size: .8em;
+  align-items: center;
+  color: #f61602;
+  margin-bottom: .5em;
+}
+
+.magazine-art > div > p:first-child {
+  background-color: #f61602;
+  color: white;
+  margin-right: .7em;
+  padding: 3px 7px;
+}
+
+/* Editor's Pick Section */
+
+.editors-row {
+  margin: 1em 3em;
+  font-weight: 700;
+}
+
+.description > p:first-child {
+  line-height: 1.2em;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.description > p:last-child{
+  font-size: .8em;
+  font-weight: 500;
+  margin-top: .5em;
+}
+
+/* World Section */
+
+.world-section {
+  margin: 0 2em 1em 2em;
+}
+
+.world-title {
+  font-size: 1.2em;
+  color: #f61602;
+  font-weight: bolder;
+  margin: 1em 0 .4em 0;
+}
+
+.world-art {
+  font-weight: 600;
+}
+
+.world-art > p {
+  margin-top: .8em;
+}
+
+.world-side {
+  padding: 0;
+}
+
+.world-side-row {
+  margin-bottom: .5em;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.world-side-img {
+  padding-right: .5em;
+  width: 100%;
+  max-width: 8em;
+}
