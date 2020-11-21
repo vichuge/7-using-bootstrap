@@ -341,6 +341,7 @@ img {
   padding-bottom: 0;
   margin-bottom: 1em;
   background-color:#f61602;
+  border: none;
 }
 
 .sec1-footer {
@@ -441,4 +442,53 @@ img {
   padding-right: .5em;
   width: 100%;
   max-width: 8em;
+}
+
+/* Subscribe Footer*/
+
+.subscribe-footer {
+  background-color: #f4f5f6;
+  margin-bottom: 10em;
+}
+
+.subscribe-title {
+  font-size: 1.2em;
+  color: #f61602;
+  font-weight: bolder;
+  margin: 1em 0 .7em 1em;
+}
+
+.img-container {
+  padding: 1em 2em;
+}
+
+.image-top {
+  position: relative;
+  top: 1em;
+  left: 5em;
+  width: 100%;
+  max-width: 10em;
+  height: auto;
+}
+
+.image-bottom {
+  position: absolute;
+  width: 100%;
+  max-width: 10em;
+  height: auto;
+}
+
+.subscribe-info > h3 {
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+.subscribe-info > p {
+  color: #666;
+  font-size: .8em;
+}
+
+.subscribe-btn {
+  padding: .4em 1em;
+  margin-top: 1em;
 }
