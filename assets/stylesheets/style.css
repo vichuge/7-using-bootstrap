@@ -278,7 +278,8 @@ img {
   line-height: 1em;
 }
 
-.hr-31, .hr-32 {
+.hr-31, 
+.hr-32 {
   border: none;
   height: 1px;
   background-color: #d9d9d9;
@@ -303,7 +304,7 @@ img {
   padding: .2em .4em;
   font-weight: bold;
   top: .6em;
-  left: 8em;
+  left: 45%;
 }
 
 .sec1-col3-space {
@@ -470,19 +471,21 @@ img {
 }
 
 .image-top {
-  position: relative;
-  top: 1em;
-  left: 5em;
-  width: 100%;
-  max-width: 10em;
+  top: 10%;
+  left: 30%;
+  width: 10em;
   height: auto;
 }
 
 .image-bottom {
-  position: absolute;
   width: 100%;
   max-width: 10em;
+  min-width: 5em;
   height: auto;
+}
+
+.subscribe-info {
+  padding-left: 3em;
 }
 
 .subscribe-info > h3, .h3-subs-col-right {
@@ -490,6 +493,7 @@ img {
   font-weight: bolder;
   margin-bottom: 1em;
 }
+
 .subscribe-info > p {
   color: #666;
   font-size: .8em;
@@ -500,10 +504,13 @@ img {
   margin-top: 1em;
 }
 
+.newsletter-container {
+  padding-right: 0;
+}
+
 .subs-img-right {
   width: 100%;
-  height: 19em;
-  justify-self: left;
+  height: 100%;
 }
 
 .subs-border {
@@ -517,6 +524,8 @@ img {
 
 .subs-btn {
   font-size: .8em;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .p-subs-col-right {
@@ -545,10 +554,11 @@ footer {
 .p-footer-copy {
   font-size: .75em;
   color:#666;
+  margin-top: 1.4em;
 }
 
 .footer-icon {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #666;
 }
 
