@@ -255,8 +255,18 @@ img {
   margin-top: 1em;
 }
 
+.col-vs-img {
+  padding: 0;
+}
+
+.vs-text {
+  padding-left: 1em;
+}
+
 .vs-img {
-  width: 100%;
+  width: 4em;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .sec1-col3-p1 {
@@ -329,7 +339,7 @@ img {
 }
 
 .sec1-col2-email-p {
-  font-size: 1em;
+  font-size: .9em;
   font-weight: 600;
   line-height: 1.3em;
   text-transform: uppercase;
