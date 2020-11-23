@@ -37,10 +37,6 @@ article {
   margin-right: 0;
 }
 
-.flex {
-  display: flex;
-}
-
 .no-padding {
   padding: 0;
 }
@@ -76,11 +72,20 @@ article {
 
 .navbar1-right-container {
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .navbar1-left,
 .navbar1-right {
   margin-top: 2.5em;
+}
+
+.navbar1-center {
+  justify-content: center;
+}
+
+.navbar1-right {
+  padding-right: 0;
 }
 
 .date {
@@ -90,6 +95,14 @@ article {
 .img-logo {
   width: 390px;
   height: auto;
+}
+
+.user {
+  display: none;
+}
+
+.hamburguer {
+  display: none;
 }
 
 p {
@@ -106,18 +119,27 @@ p {
   border-radius: 15px;
   padding: 0.1em 0.9em;
   font-weight: 700;
-  margin: 0 1em;
+}
+
+.column-lg-5 {
+  padding-right: 1em;
 }
 
 .second-nav {
-  margin-right: 7%;
   font-weight: 600;
   padding: 1em 0;
+  font-size: .9em;
 }
 
 .second-nav > div {
   border-right: 1px solid #888;
-  padding: 0 1.2em;
+  padding: 0 1%;
+  font-size: 14px;
+}
+
+.second-nav > div:last-child {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .second-nav > div:last-child,
@@ -126,9 +148,9 @@ p {
 }
 
 .third-nav {
-  padding-right: 30%;
+  padding-right: 20%;
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #666;
   padding: 0.8em 0.9em;
   border-top: 2px solid #f4f5f6;

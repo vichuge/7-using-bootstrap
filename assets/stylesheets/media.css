@@ -1,19 +1,59 @@
 @media (max-width: 992px) {
-    body {
-        background-color: pink;
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
     }
 
-    header {
-        display:none;
+    .img-logo {
+        width: 11em;
+    }
+    
+    .navbar1-center {
+        padding-left: 0;
+        justify-content: flex-start;
+    }
+
+    .navbar1-right {
+        margin-top: 0;
+    }
+
+    .user {
+        display: none;
+    }
+
+    .hamburguer {
+        display: inline;
+        margin-left: 1em;
+    }
+    
+    .second-nav,
+    .third-nav {
+        display: none;
+    }
+
+    .navbar1-left {
+        display: none;
     }
 
     .email-section {
         max-width: 20em;
+        margin-bottom: 2em;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        background-color: brown;
+    .navbar1-right {
+        margin-top: 0;
     }
+
+    .login {
+        display: none;
+    }
+
+    .user {
+        display: inline;
+        margin-right: 1em;
+    }
+
 }
