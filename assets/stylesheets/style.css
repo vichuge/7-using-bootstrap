@@ -142,6 +142,26 @@ p {
   font-size: 14px;
 }
 
+.description > p:first-child {
+  line-height: 1.2em;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.description > p:last-child {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.magazine-art > div {
+  display: flex;
+  font-size: 0.8em;
+  align-items: center;
+  color: #f61602;
+  margin-bottom: 0.5em;
+}
+
 .third-row > article > div {
   padding: 0;
 }
@@ -435,13 +455,13 @@ img {
   margin-bottom: 1em;
 }
 
-.magazine-art > div {
+/*.magazine-art > div {
   display: flex;
   font-size: 0.8em;
   align-items: center;
   color: #f61602;
   margin-bottom: 0.5em;
-}
+}*/
 
 .magazine-art > div > p:first-child {
   background-color: #f61602;
@@ -457,20 +477,7 @@ img {
   font-weight: 700;
 }
 
-.description > p:first-child {
-  line-height: 1.2em;
-  margin-top: 1em;
-  font-size: 1.2em;
-}
-
-.description > p:last-child {
-  font-size: 0.8em;
-  font-weight: 500;
-  margin-top: 0.5em;
-}
-
 /* World Section */
-
 .world-section {
   margin: 0 2em 1em 2em;
 }
