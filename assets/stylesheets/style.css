@@ -136,14 +136,14 @@ p {
   font-size: 0.9em;
 }
 
-.third-row > article > div {
-  padding: 0;
-}
-
 .second-nav > div {
   border-right: 1px solid #888;
   padding: 0 1%;
   font-size: 14px;
+}
+
+.third-row > article > div {
+  padding: 0;
 }
 
 .second-nav > div:last-child {
@@ -157,7 +157,6 @@ p {
 }
 
 .third-nav {
-
   font-weight: 600;
   font-size: 0.8em;
   color: #666;
@@ -260,10 +259,6 @@ img {
 .third-row {
   margin-top: 2em;
 }
-
-/*.third-row > article > div {
-  padding: 0;
-}*/
 
 .third-row-img {
   width: 75%;
