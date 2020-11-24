@@ -8,7 +8,7 @@
   .img-logo {
     width: 11em;
   }
-  
+
   .navbar1-center {
     padding-left: 0;
     justify-content: flex-start;
@@ -41,7 +41,9 @@
     margin-bottom: 2em;
   }
 
-  .in-the-magazine, .editors-row, .world-section {
+  .in-the-magazine,
+  .editors-row,
+  .world-section {
     margin: 0;
   }
 
@@ -91,12 +93,12 @@
 
   .subscribe-info {
     padding-left: 0;
-    padding-top:2em;
+    padding-top: 2em;
     text-align: center;
   }
 
   .sec1-col3-email-btn {
-    font-size: .7em
+    font-size: 0.7em;
   }
 
   .img-container {
@@ -127,11 +129,11 @@
   }
 
   .ml-auto {
-    margin-left: 0!important;
+    margin-left: 0 !important;
   }
 
   .p-footer-copy {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 }
 
@@ -155,4 +157,5 @@
   .logo-2 {
     width: 100%;
   }
+
 }

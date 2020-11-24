@@ -133,7 +133,7 @@ p {
 .second-nav {
   font-weight: 600;
   padding: 1em 0;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .second-nav > div {
@@ -157,7 +157,7 @@ p {
   font-weight: 600;
   font-size: 0.8em;
   color: #666;
-  padding: 0.8em 0.9em;
+  padding: 0.8em;
   border-top: 2px solid #f4f5f6;
   border-bottom: 2px solid#f4f5f6;
 }
@@ -188,7 +188,6 @@ img {
 
 .art-img-1-p {
   position: absolute;
-  padding: 0.2em;
   color: #ff0500;
   background-color: rgba(255, 255, 255, 0.8);
   bottom: 0;
@@ -253,6 +252,7 @@ img {
 }
 
 /* Section 3 */
+
 .third-row {
   margin-top: 2em;
 }
@@ -308,7 +308,7 @@ img {
 }
 
 .vs-img2 {
-  margin-right: .2em;
+  margin-right: 0.2em;
 }
 
 .opinion-row {
@@ -316,13 +316,13 @@ img {
 }
 
 .sec1-col3-p1 {
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: bolder;
   line-height: 1em;
 }
 
 .sec1-col3-p2 {
-  font-size: .8em;
+  font-size: 0.8em;
   line-height: 1em;
   color: #9a9a9a;
   margin-top: 1em;
@@ -334,13 +334,13 @@ img {
   line-height: 1em;
 }
 
-.hr-31, 
+.hr-31,
 .hr-32 {
   border: none;
   height: 1px;
   background-color: #d9d9d9;
   margin-bottom: 0;
-  margin-top: .1em;
+  margin-top: 0.1em;
 }
 
 .hr-31 {
@@ -357,21 +357,21 @@ img {
   border-radius: 50%;
   background-color: black;
   color: #d6d6d6;
-  padding: .2em .4em;
+  padding: 0.2em 0.4em;
   font-weight: bold;
-  top: .6em;
+  top: 0.6em;
   left: 45%;
 }
 
 .sec1-col3-space {
-  margin-top: .4em;
+  margin-top: 0.4em;
 }
 
 .logo-n {
   background-color:#f72210;
   width: 2em;
   height: auto;
-  margin-top: .3em;
+  margin-top: 0.3em;
 }
 
 .email-section {
@@ -386,7 +386,7 @@ img {
 }
 
 .sec1-col2-email-p {
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: 600;
   line-height: 1.3em;
   text-transform: uppercase;
@@ -394,13 +394,13 @@ img {
 
 .sec1-col3-input {
   border-radius: 0;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .sec1-col3-email-btn {
-  margin-top: .1em;
+  margin-top: 0.1em;
   margin-bottom: 1em;
-  background-color:#f61602;
+  background-color: #f61602;
   border: none;
   text-transform: uppercase;
   font-size: 1em;
@@ -417,8 +417,8 @@ img {
 }
 
 .sec1-footer-p {
-  margin-left: .5em;
-  font-size: 1.2em
+  margin-left: 0.5em;
+  font-size: 1.2em;
 }
 
 /* In The Magazine Section */
@@ -438,16 +438,16 @@ img {
 
 .magazine-art > div {
   display: flex;
-  font-size: .8em;
+  font-size: 0.8em;
   align-items: center;
   color: #f61602;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .magazine-art > div > p:first-child {
   background-color: #f61602;
   color: white;
-  margin-right: .7em;
+  margin-right: 0.7em;
   padding: 3px 7px;
 }
 
@@ -465,9 +465,9 @@ img {
 }
 
 .description > p:last-child{
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 500;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 /* World Section */
@@ -480,7 +480,7 @@ img {
   font-size: 1.2em;
   color: #f61602;
   font-weight: bolder;
-  margin: 1em 0 .4em 0;
+  margin: 1em 0 0.4em 0;
 }
 
 .world-art {
@@ -488,7 +488,7 @@ img {
 }
 
 .world-art > p {
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
 
 .world-side {
@@ -496,19 +496,19 @@ img {
 }
 
 .world-side-row {
-  margin-bottom: .5em;
-  font-size: .9em;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
   font-weight: 600;
   flex-wrap: nowrap;
 }
 
 .world-side-img {
-  padding-right: .5em;
+  padding-right: 0.5em;
   width: 100%;
   max-width: 8em;
 }
 
-/* Subscribe Footer*/
+/* Subscribe Footer */
 
 .subscribe-footer {
   background-color: #f4f5f6;
@@ -520,12 +520,12 @@ img {
   font-size: 1.2em;
   color: #f61602;
   font-weight: bolder;
-  margin: 1em 0 .7em 0;
+  margin: 1em 0 0.7em 0;
   padding-left: 1em;
 }
 
 .img-container {
-  padding: 1em 2em 0 .5em;
+  padding: 1em 2em 0 0.5em;
 }
 
 .image-top {
@@ -546,7 +546,8 @@ img {
   padding-left: 3em;
 }
 
-.subscribe-info > h3, .h3-subs-col-right {
+.subscribe-info > h3,
+.h3-subs-col-right {
   color: black;
   font-weight: bolder;
   margin-bottom: 1em;
@@ -554,11 +555,11 @@ img {
 
 .subscribe-info > p {
   color: #666;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .subscribe-btn {
-  padding: .4em 1em;
+  padding: 0.4em 1em;
   margin-top: 1em;
 }
 
@@ -586,7 +587,7 @@ img {
 }
 
 .p-subs-col-right {
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 1.2em;
 }
 
@@ -609,8 +610,8 @@ footer {
 }
 
 .p-footer-copy {
-  font-size: .75em;
-  color:#666;
+  font-size: 0.75em;
+  color: #666;
   margin-top: 1.4em;
 }
 
@@ -626,8 +627,8 @@ footer {
 .footer-options > .col-auto {
   color: #666;
   padding-right: 0;
-  padding-left: .5em;
-  font-size: .9em;
+  padding-left: 0.5em;
+  font-size: 0.9em;
 }
 
 .option-bold {
