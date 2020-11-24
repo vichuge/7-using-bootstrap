@@ -136,6 +136,10 @@ p {
   font-size: 0.9em;
 }
 
+.third-row > article > div {
+  padding: 0;
+}
+
 .second-nav > div {
   border-right: 1px solid #888;
   padding: 0 1%;
@@ -257,9 +261,9 @@ img {
   margin-top: 2em;
 }
 
-.third-row > article > div {
+/*.third-row > article > div {
   padding: 0;
-}
+}*/
 
 .third-row-img {
   width: 75%;
