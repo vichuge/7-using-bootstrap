@@ -171,6 +171,11 @@ p {
 }
 
 /* Section 1 */
+.sticky-pos {
+  position: sticky !important;
+  top: 1em;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -372,6 +377,7 @@ img {
 
 .sec1-col3-space2 {
   padding-top: 1em;
+  flex-wrap: nowrap;
 }
 
 .sec1-col2-email-p {
