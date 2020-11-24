@@ -79,4 +79,27 @@
         margin-right: 1em;
     }
 
+    .underline {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .p-underline {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .subscribe-info {
+        padding-left: 0;
+        padding-top:2em;
+        text-align: center;
+    }
+
+    .sec1-col3-email-btn {
+        font-size: .7em
+    }
+
+    .world-side-row {
+        margin-top: 1em;
+    }
 }
