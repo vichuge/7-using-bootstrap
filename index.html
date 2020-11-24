@@ -26,7 +26,7 @@
     <div class="container">
       <header>
         <div class="row nav-bar">
-          <div class="col-lg-3 navbar1-left">
+          <div class="col-lg-3 navbar1-left d-none d-lg-block text-uppercase">
             <div class="row">
               <div class="col-lg-12">
                 <p><i class="fas fa-cloud-sun-rain"></i> 29° Mérida, MX ></p>
@@ -43,18 +43,18 @@
           >
             <img class="img-logo" src="assets/img/svg/logo.svg" alt="logo" />
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 navbar1-right">
-            <div class="row navbar1-right-container">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 navbar1-right p-r-0">
+            <div class="row d-flex align-items-end justify-content-end">
               <div class="column-lg-5">
-                <p class="login">LOGIN</p>
-                <div class="user">
+                <p class="login d-none d-xl-block">LOGIN</p>
+                <div class="user d-lg-block d-xl-none">
                   <i class="fas fa-user"></i>
                 </div>
               </div>
-              <div class="column-lg-7">
+              <div class="column-lg-7 d-none d-sm-block">
                 <button class="suscribe-btn" type="button">SUBSCRIBE ></button>
               </div>
-              <div class="hamburguer">
+              <div class="d-lg-none d-xl-none">
                 <i class="fas fa-bars"></i>
               </div>
             </div>
@@ -94,22 +94,22 @@
           <div class="col-auto">
             <p>Weather</p>
           </div>
-          <div class="col-auto search">
+          <div class="col-auto search text-secondary p-r-0 m-r-0">
             <p>Search <i class="fas fa-search"></i></p>
           </div>
         </div>
         <div class="row third-nav">
           <div class="col-auto trending">TRENDING</div>
-          <div class="col-auto">JOE BIDEN</div>
-          <div class="col-auto">DONALD TRUMP</div>
-          <div class="col-auto">2020 ELECTION</div>
-          <div class="col-auto">CORONAVIRUS</div>
-          <div class="col-auto">STIMULUS PACKAGE</div>
+          <div class="col-auto text-secondary">JOE BIDEN</div>
+          <div class="col-auto text-secondary">DONALD TRUMP</div>
+          <div class="col-auto text-secondary">2020 ELECTION</div>
+          <div class="col-auto text-secondary">CORONAVIRUS</div>
+          <div class="col-auto text-secondary">STIMULUS PACKAGE</div>
         </div>
       </header>
       <div class="row sec-1">
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <h3>Featured stories</h3>
+          <h3 class="text-secondary text-uppercase">Featured stories</h3>
           <article>
             <div class="row art-divimg-1">
               <img
@@ -122,14 +122,14 @@
             <h4 onClick="myFunction();" class="underline font-weight-bold">
               Trump team rejects Georgia recount confirming Biden win
             </h4>
-            <p onClick="myFunction();" class="sec1-art-p">
+            <p onClick="myFunction();" class="sec1-art-p text-secondary">
               President-elect Joe Biden beat his Republican rival in the Peach
               State by around 12,000 votes according to the recount.
             </p>
             <hr />
           </article>
           <article>
-            <h3 class="sec1-art-p2">
+            <h3 class="sec1-art-p2 text-secondary text-uppercase">
               Democrats Lose Patience With GSA's Biden Transition Delay, Demand
               Answers
             </h3>
@@ -147,7 +147,25 @@
             <h4 onClick="myFunction();" class="underline font-weight-bold">
               Trump team rejects Georgia recount confirming Biden win
             </h4>
-            <p onClick="myFunction();" class="sec1-art-p">
+            <p onClick="myFunction();" class="sec1-art-p text-secondary">
+              President-elect Joe Biden beat his Republican rival in the Peach
+              State by around 12,000 votes according to the recount.
+            </p>
+            <hr />
+          </article>
+          <article>
+            <div class="row art-divimg-1">
+              <img
+                class="art-img-1"
+                src="assets/img/politic-img.jpg"
+                alt="article-image"
+              />
+              <p class="art-img-1-p">politic</p>
+            </div>
+            <h4 onClick="myFunction();" class="underline font-weight-bold ">
+              Trump team rejects Georgia recount confirming Biden win
+            </h4>
+            <p onClick="myFunction();" class="sec1-art-p text-secondary">
               President-elect Joe Biden beat his Republican rival in the Peach
               State by around 12,000 votes according to the recount.
             </p>
@@ -165,7 +183,7 @@
             <h4 onClick="myFunction();" class="underline font-weight-bold">
               Trump team rejects Georgia recount confirming Biden win
             </h4>
-            <p onClick="myFunction();" class="sec1-art-p">
+            <p onClick="myFunction();" class="sec1-art-p text-secondary">
               President-elect Joe Biden beat his Republican rival in the Peach
               State by around 12,000 votes according to the recount.
             </p>
@@ -183,32 +201,14 @@
             <h4 onClick="myFunction();" class="underline font-weight-bold">
               Trump team rejects Georgia recount confirming Biden win
             </h4>
-            <p onClick="myFunction();" class="sec1-art-p">
+            <p onClick="myFunction();" class="sec1-art-p text-secondary">
               President-elect Joe Biden beat his Republican rival in the Peach
               State by around 12,000 votes according to the recount.
             </p>
             <hr />
           </article>
           <article>
-            <div class="row art-divimg-1">
-              <img
-                class="art-img-1"
-                src="assets/img/politic-img.jpg"
-                alt="article-image"
-              />
-              <p class="art-img-1-p">politic</p>
-            </div>
-            <h4 onClick="myFunction();" class="underline font-weight-bold">
-              Trump team rejects Georgia recount confirming Biden win
-            </h4>
-            <p onClick="myFunction();" class="sec1-art-p">
-              President-elect Joe Biden beat his Republican rival in the Peach
-              State by around 12,000 votes according to the recount.
-            </p>
-            <hr />
-          </article>
-          <article>
-            <h3 class="sec1-art-p2">
+            <h3 class="sec1-art-p2 text-secondary text-uppercase">
               Democrats Lose Patience With GSA's Biden Transition Delay, Demand
               Answers
             </h3>
@@ -216,7 +216,7 @@
           </article>
         </div>
         <div class="col-lg-5 col-md-6 col-sm-12">
-          <h3>Featured stories</h3>
+          <h3 class="text-secondary text-uppercase">Top Story</h3>
           <article>
             <div class="row art-divimg-1">
               <img
@@ -236,17 +236,16 @@
             </p>
           </article>
           <div class="row second-row">
-            <h3 class="h3-2">My turn</h3>
-            <div class="row row-two">
+            <h3 class="h3-2 text-secondary text-uppercase">My turn</h3>
+            <div class="row row-two m-r-0">
               <div class="col-lg-4 col-md-4 col-two">
                 <img
                   class="img-col-2-1"
                   src="assets/img/my-turn-img.jpg"
                   alt="doctor-img"
                 />
-                <p class="col22-p">
-                  'I'm a Doctor in Illinois, We're Scared of Running Out of
-                  Hospital Beds'
+                <p class="col22-p text-secondary">
+                  <b>'I'm a Doctor in Illinois, We're Scared of Running Out of Hospital Beds'</b>
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 col-two">
@@ -255,9 +254,8 @@
                   src="assets/img/my-turn-img.jpg"
                   alt="doctor-img"
                 />
-                <p class="col22-p">
-                  'I'm a Doctor in Illinois, We're Scared of Running Out of
-                  Hospital Beds'
+                <p class="col22-p text-secondary">
+                  <b>'I'm a Doctor in Illinois, We're Scared of Running Out of Hospital Beds'</b>
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 col-two">
@@ -266,25 +264,23 @@
                   src="assets/img/my-turn-img.jpg"
                   alt="doctor-img"
                 />
-                <p class="col22-p">
-                  'I'm a Doctor in Illinois, We're Scared of Running Out of
-                  Hospital Beds'
+                <p class="col22-p text-secondary">
+                  <b>'I'm a Doctor in Illinois, We're Scared of Running Out of Hospital Beds'</b>
                 </p>
               </div>
             </div>
           </div>
           <div class="row second-row">
-            <h3 class="h3-2">Culture & travel</h3>
-            <div class="row row-two">
+            <h3 class="h3-2 text-secondary text-uppercase">Culture & travel</h3>
+            <div class="row row-two m-r-0">
               <div class="col-lg-4 col-md-4 col-two">
                 <img
                   class="img-col-2-1"
                   src="assets/img/my-turn-img.jpg"
                   alt="doctor-img"
                 />
-                <p class="col22-p">
-                  'I'm a Doctor in Illinois, We're Scared of Running Out of
-                  Hospital Beds'
+                <p class="col22-p text-secondary">
+                  <b>'I'm a Doctor in Illinois, We're Scared of Running Out of Hospital Beds'</b>
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 col-two">
@@ -293,9 +289,8 @@
                   src="assets/img/my-turn-img.jpg"
                   alt="doctor-img"
                 />
-                <p class="col22-p">
-                  'I'm a Doctor in Illinois, We're Scared of Running Out of
-                  Hospital Beds'
+                <p class="col22-p text-secondary">
+                  <b>'I'm a Doctor in Illinois, We're Scared of Running Out of Hospital Beds'</b>
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 col-two">
@@ -304,30 +299,28 @@
                   src="assets/img/my-turn-img.jpg"
                   alt="doctor-img"
                 />
-                <p class="col22-p">
-                  'I'm a Doctor in Illinois, We're Scared of Running Out of
-                  Hospital Beds'
+                <p class="col22-p text-secondary">
+                  <b>'I'm a Doctor in Illinois, We're Scared of Running Out of Hospital Beds'</b>
                 </p>
               </div>
             </div>
           </div>
           <section class="third-row">
-            <h3 class="h3-2">more stories</h3>
+            <h3 class="h3-2 text-secondary text-uppercase">more stories</h3>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -335,19 +328,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -355,19 +347,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -375,19 +366,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -395,19 +385,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -415,19 +404,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -435,19 +423,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -455,19 +442,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -475,19 +461,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -495,19 +480,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -515,19 +499,18 @@
             </article>
             <hr />
             <article class="row more-stories-art d-flex">
-              <div class="col-auto no-padding">
+              <div class="col-auto p-0">
                 <img
                   class="third-row-img"
                   src="assets/img/more-stories-img.jpg"
                   alt="more-stories"
                 />
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three no-padding">
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
                 <h5 class="underline font-weight-bold">
-                  High-risk People May Get COVID Vaccine Before Christmas Pfizer
-                  Says
+                  <b>High-risk People May Get COVID Vaccine Before Christmas Pfizer Says</b>
                 </h5>
-                <p class="p-underline font-weight-bold">
+                <p class="p-underline font-weight-bold text-secondary">
                   The move comes after Pfizer-BioNTech claimed their vaccine is
                   95 percent effective in preventing COVID.
                 </p>
@@ -536,10 +519,10 @@
           </section>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12">
-          <h3>The debate</h3>
+          <h3 class="text-secondary text-uppercase">The debate</h3>
           <hr class="hr-2" />
           <div class="row align-items-center vsrow d-flex">
-            <div class="col-lg-auto col-md-auto col-sm-2 col-auto col-vs-img">
+            <div class="col-lg-auto col-md-auto col-sm-2 col-auto col-vs-img p-0">
               <img
                 class="vs-img"
                 src="assets/img/image(4).png"
@@ -547,11 +530,10 @@
               />
             </div>
             <div
-              class="col-lg-8 col-md-10 col-sm-10 col-6 no-padding-right vs-text"
+              class="col-lg-8 col-md-10 col-sm-10 col-6 p-0-right vs-text"
             >
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -559,17 +541,16 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr class="hr-31" />
               <p class="p-bet-hr">vs</p>
               <hr class="hr-32" />
             </div>
           </div>
           <div class="row align-items-center vsrow d-flex">
-            <div class="col-lg-9 col-md-10 col-sm-10 col-6 no-padding-right">
+            <div class="col-lg-9 col-md-10 col-sm-10 col-6 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -577,26 +558,25 @@
             </div>
             <div class="col-lg-3 col-md-auto col-sm-2 col-auto ml-auto">
               <img
-                class="vs-img"
+                class="vs-img p-0 m-0"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
           </div>
           <hr class="hr-2" />
-          <h3 class="h3-2">Opinion</h3>
+          <h3 class="h3-2 text-secondary text-uppercase">Opinion</h3>
           <div class="row align-items-center d-flex opinion-row">
-            <div class="col-auto no-padding">
+            <div class="col-auto p-0">
               <img
                 class="vs-img2"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
-            <div class="col-9 no-padding-right">
+            <div class="col-9 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -604,22 +584,21 @@
             </div>
           </div>
           <div class="row sec1-col3-space">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr />
             </div>
           </div>
           <div class="row align-items-center d-flex opinion-row">
-            <div class="col-auto no-padding">
+            <div class="col-auto p-0">
               <img
                 class="vs-img2"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
-            <div class="col-9 no-padding-right">
+            <div class="col-9 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -627,22 +606,21 @@
             </div>
           </div>
           <div class="row sec1-col3-space">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr />
             </div>
           </div>
           <div class="row align-items-center d-flex opinion-row">
-            <div class="col-auto no-padding">
+            <div class="col-auto p-0">
               <img
                 class="vs-img2"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
-            <div class="col-9 no-padding-right">
+            <div class="col-9 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -650,22 +628,21 @@
             </div>
           </div>
           <div class="row sec1-col3-space">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr />
             </div>
           </div>
           <div class="row align-items-center d-flex opinion-row">
-            <div class="col-auto no-padding">
+            <div class="col-auto p-0">
               <img
                 class="vs-img2"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
-            <div class="col-9 no-padding-right">
+            <div class="col-9 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -673,22 +650,21 @@
             </div>
           </div>
           <div class="row sec1-col3-space">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr />
             </div>
           </div>
           <div class="row align-items-center d-flex opinion-row">
-            <div class="col-auto no-padding">
+            <div class="col-auto p-0">
               <img
                 class="vs-img2"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
-            <div class="col-9 no-padding-right">
+            <div class="col-9 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -696,22 +672,21 @@
             </div>
           </div>
           <div class="row sec1-col3-space">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr />
             </div>
           </div>
           <div class="row align-items-center d-flex opinion-row">
-            <div class="col-auto no-padding">
+            <div class="col-auto p-0">
               <img
                 class="vs-img2"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
-            <div class="col-9 no-padding-right">
+            <div class="col-9 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -719,22 +694,21 @@
             </div>
           </div>
           <div class="row sec1-col3-space">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr />
             </div>
           </div>
           <div class="row align-items-center d-flex opinion-row">
-            <div class="col-auto no-padding">
+            <div class="col-auto p-0">
               <img
                 class="vs-img2"
                 src="assets/img/image(4).png"
                 alt="versus1"
               />
             </div>
-            <div class="col-9 no-padding-right">
+            <div class="col-9 p-0-right">
               <p class="sec1-col3-p1">
-                Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                Ignoring It
+                <b>Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It</b>
               </p>
               <p class="sec1-col3-p2">
                 BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
@@ -742,7 +716,7 @@
             </div>
           </div>
           <div class="row sec1-col3-space">
-            <div class="col-lg-12 no-padding">
+            <div class="col-lg-12 p-0">
               <hr />
             </div>
           </div>
@@ -757,8 +731,8 @@
                     alt="logo-n"
                   />
                 </div>
-                <div class="col-8 no-padding-left">
-                  <p class="sec1-col2-email-p">
+                <div class="col-8 p-0-left">
+                  <p class="sec1-col2-email-p text-uppercase">
                     Start your day with our top 5 articles
                   </p>
                 </div>
@@ -777,7 +751,7 @@
               <div class="row sec1-col3-space">
                 <div class="col-lg-12">
                   <button
-                    class="btn btn-danger btn-lg btn-block sec1-col3-email-btn"
+                    class="btn btn-danger btn-lg btn-block sec1-col3-email-btn text-uppercase"
                     type="submit"
                   >
                     Free sign up >
@@ -795,7 +769,7 @@
             src="assets/img/logo-n1.png"
             alt="logo-n"
           />
-          <p class="sec1-col2-email-p sec1-footer-p">In the magazine</p>
+          <p class="sec1-col2-email-p sec1-footer-p text-uppercase">In the magazine</p>
         </div>
       </div>
       <div class="row">
@@ -804,7 +778,7 @@
         </div>
       </div>
       <section class="in-the-magazine row">
-        <h5>In the magazine section</h5>
+        <h5 class="d-none">In the magazine section</h5>
         <div class="col-lg-3 col-md-3 col-sm-12">
           <article class="magazine-art">
             <h5>In the Magazine Article</h5>
@@ -869,7 +843,7 @@
             src="assets/img/logo-n1.png"
             alt="logo-n"
           />
-          <p class="sec1-col2-email-p sec1-footer-p">editor's pick</p>
+          <p class="sec1-col2-email-p sec1-footer-p text-uppercase">editor's pick</p>
         </div>
       </div>
       <div class="row">
@@ -878,7 +852,7 @@
         </div>
       </div>
       <section class="editors-pick">
-        <h5>Editor's Pick Section</h5>
+        <h5 class="d-none">Editor's Pick Section</h5>
         <div class="row editors-row">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="row art-divimg-1">
@@ -887,7 +861,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -907,7 +881,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -927,7 +901,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -947,7 +921,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -969,7 +943,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -989,7 +963,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -1009,7 +983,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -1029,7 +1003,7 @@
                 src="assets/img/editors-pick-img.jpg"
                 alt="article-image"
               />
-              <p class="art-img-1-p">u. s.</p>
+              <p class="art-img-1-p text-uppercase"><b>u. s.</b></p>
             </div>
             <div class="description">
               <p class="underline font-weight-bold">
@@ -1050,9 +1024,9 @@
         </div>
       </div>
       <section class="world-section row">
-        <h5>World Section</h5>
+        <h5 class="d-none">World Section</h5>
         <div class="col-lg-12 world-title">
-          <p>World</p>
+          <b>World</b>
         </div>
         <div class="col-lg-4 col-md-4 world-art">
           <img src="assets/img/world-img.jpg" alt="world-art" />
@@ -1073,7 +1047,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding d-flex">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0 d-flex">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1089,7 +1063,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1105,7 +1079,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1120,9 +1094,9 @@
         </div>
       </div>
       <section class="world-section row">
-        <h5>World Section</h5>
+        <h5 class="d-none">World Section</h5>
         <div class="col-lg-12 world-title">
-          <p>World</p>
+          <b>World</b>
         </div>
         <div class="col-lg-4 col-md-4 world-art">
           <img src="assets/img/world-img.jpg" alt="world-art" />
@@ -1143,7 +1117,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1159,7 +1133,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1175,7 +1149,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1190,9 +1164,9 @@
         </div>
       </div>
       <section class="world-section row">
-        <h5>World Section</h5>
+        <h5 class="d-none">World Section</h5>
         <div class="col-lg-12 world-title">
-          <p>World</p>
+          <b>World</b>
         </div>
         <div class="col-lg-4 col-md-4 world-art">
           <img src="assets/img/world-img.jpg" alt="world-art" />
@@ -1213,7 +1187,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1229,7 +1203,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1245,7 +1219,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1260,9 +1234,9 @@
         </div>
       </div>
       <section class="world-section row last-world-section">
-        <h5>World Section</h5>
+        <h5 class="d-none">World Section</h5>
         <div class="col-lg-12 world-title">
-          <p>World</p>
+          <b>World</b>
         </div>
         <div class="col-lg-4 col-md-4 world-art">
           <img src="assets/img/world-img.jpg" alt="world-art" />
@@ -1283,7 +1257,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1299,7 +1273,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1315,7 +1289,7 @@
             <div class="col-lg-6 col-md-5 col-auto world-side-img">
               <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
             </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold no-padding">
+            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
               <p>
                 Russell Wilson Equals NFL Record Held by Drew Brees and Brett
                 Favre
@@ -1328,8 +1302,8 @@
         <div class="row">
           <div class="col-lg-7 col-md-12 subscribe-title">
             <div class="row">
-              <div class="col-lg-12 col-md-12 no-padding-left">
-                <p>Subscribe</p>
+              <div class="col-lg-12 col-md-12 p-0-left">
+                <b>Subscribe</b>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -1347,24 +1321,22 @@
               </div>
               <div class="col-lg-8 col-md-9 subscribe-info my-auto">
                 <h3>
-                  In-depth Stories You Don't See Elsewhere About Topics You Want
-                  to Read!
+                  In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
                 </h3>
-                <p>All Access + Weekly Delivery</p>
-                <p>Choose A Membership That's Perfect for You!</p>
+                <p class="text-secondary">All Access + Weekly Delivery</p>
+                <p class="text-secondary">Choose A Membership That's Perfect for You!</p>
                 <button
                   class="subscribe-btn btn btn-danger sec1-col3-email-btn text-uppercase"
                   type="submit"
-                >
-                  subscribe >
+                >subscribe >
                 </button>
               </div>
             </div>
           </div>
           <div class="col-lg-5 col-md-12 subscribe-title">
             <div class="row">
-              <div class="col-lg-12 col-md-12 no-padding-left">
-                <p>Newsletter</p>
+              <div class="col-lg-12 col-md-12 p-0-left">
+                <b>Newsletter</b>
               </div>
             </div>
             <div class="row newl-row">
@@ -1375,18 +1347,18 @@
                   alt="newsletter"
                 />
               </div>
-              <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 no-padding-left">
+              <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 p-0-left">
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
-                    <h3 class="h3-subs-col-right">The Starting 5</h3>
+                    <h3 class="h3-subs-col-right"><b>The Starting 5</b></h3>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
-                    <p class="p-subs-col-right">
+                    <b class="p-subs-col-right">
                       See why nearly a quarter of a million subscribers begin
                       their day with the Starting 5.
-                    </p>
+                    </b>
                   </div>
                 </div>
                 <div class="row sec1-col3-space subs-div-form">
@@ -1403,7 +1375,7 @@
                 <div class="row sec1-col3-space">
                   <div class="col-lg-12">
                     <button
-                      class="btn btn-danger btn-lg btn-block sec1-col3-email-btn subs-btn"
+                      class="btn btn-danger btn-lg btn-block sec1-col3-email-btn subs-btn text-uppercase"
                       type="submit"
                     >
                       Free sign up &gt;
@@ -1418,18 +1390,18 @@
       </section>
       <footer>
         <div class="row d-flex first-footer">
-          <div class="no-padding-right p-1">
+          <div class="p-0-right p-1">
             <img
               class="logo-2"
               src="assets/img/newsweeklogo.png"
               alt="neews-week-logo-2"
             />
           </div>
-          <div class="no-padding-left my-auto p-2">
+          <div class="p-0-left my-auto p-2 text-secondary">
             <p class="p-footer-copy">© 2020 NEWSWEEK DIGITAL LLC</p>
           </div>
           <div class="footer-icons p-1 ml-auto">
-            <div class="row row-icons">
+            <div class="row row-icons text-secondary">
               <div class="col-auto div-icon">
                 <i class="fab fa-facebook-square footer-icon"></i>
               </div>
@@ -1449,7 +1421,7 @@
           </div>
         </div>
         <hr />
-        <div class="row footer-options">
+        <div class="row footer-options text-secondary">
           <div class="col-auto option-bold"><p>Edition:</p></div>
           <div class="col-auto"><p>U.S. Edition</p></div>
           <div class="col-auto"><p>日本</p></div>
@@ -1457,7 +1429,7 @@
           <div class="col-auto"><p>Polska</p></div>
           <div class="col-auto"><p>România</p></div>
         </div>
-        <div class="row footer-options">
+        <div class="row footer-options text-secondary">
           <div class="col-auto"><p>About us</p></div>
           <div class="col-auto"><p>|</p></div>
           <div class="col-auto"><p>About us</p></div>
