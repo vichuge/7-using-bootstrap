@@ -5,21 +5,13 @@ body {
 
 h3 {
   font-size: 0.9em;
-  color: #9a9a9a;
   font-weight: bolder;
-  text-transform: uppercase;
 }
 
 h4 {
   margin-top: 0.7em;
   font-size: 1.5em;
-  color: black;
-  font-weight: bolder;
   line-height: 0.9em;
-}
-
-h5 {
-  display: none;
 }
 
 hr {
@@ -40,18 +32,6 @@ article {
 .row {
   margin-left: 0;
   margin-right: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.no-padding-right {
-  padding-right: 0;
-}
-
-.no-padding-left {
-  padding-left: 0;
 }
 
 /* Container */
@@ -75,11 +55,6 @@ article {
   padding-left: 1em;
 }
 
-.navbar1-right-container {
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
 .navbar1-left,
 .navbar1-right {
   margin-top: 2.5em;
@@ -89,10 +64,6 @@ article {
   justify-content: center;
 }
 
-.navbar1-right {
-  padding-right: 0;
-}
-
 .date {
   font-weight: 200;
 }
@@ -100,14 +71,6 @@ article {
 .img-logo {
   width: 390px;
   height: auto;
-}
-
-.user {
-  display: none;
-}
-
-.hamburguer {
-  display: none;
 }
 
 p {
@@ -124,6 +87,7 @@ p {
   border-radius: 15px;
   padding: 0.1em 0.9em;
   font-weight: 700;
+  margin-right: 1em;
 }
 
 .column-lg-5 {
@@ -151,7 +115,6 @@ p {
 }
 
 .subscribe-info > p {
-  color: #666;
   font-size: 0.8em;
 }
 
@@ -175,15 +138,6 @@ p {
   margin-bottom: 0.5em;
 }
 
-.third-row > article > div {
-  padding: 0;
-}
-
-.second-nav > div:last-child {
-  padding-right: 0;
-  margin-right: 0;
-}
-
 .second-nav > div:last-child,
 .second-nav > div:nth-last-child(2) {
   border-right: none;
@@ -192,7 +146,6 @@ p {
 .third-nav {
   font-weight: 600;
   font-size: 0.8em;
-  color: #666;
   padding: 0.8em;
   border-top: 2px solid #f4f5f6;
   border-bottom: 2px solid#f4f5f6;
@@ -204,7 +157,6 @@ p {
 
 .search {
   font-weight: 200;
-  color: #777;
 }
 
 .search > p > i {
@@ -227,9 +179,7 @@ img {
   color: #ff0500;
   background-color: rgba(255, 255, 255, 0.8);
   bottom: 0;
-  font-weight: bolder;
   padding: 0.3em 0.6em 0.1em 0.6em;
-  text-transform: uppercase;
 }
 
 .art-divimg-1 {
@@ -243,16 +193,13 @@ img {
 .sec1-art-p {
   margin-top: 0.7em;
   font-size: 1em;
-  color: #7b7b7b;
   line-height: 1em;
 }
 
 .sec1-art-p2 {
   margin-top: 0.7em;
   font-size: 0.9em;
-  color: black;
   line-height: 1.2em;
-  font-weight: bolder;
   cursor: pointer;
 }
 
@@ -270,12 +217,6 @@ img {
   margin-top: 1em;
   font-size: 0.9em;
   line-height: 1.4em;
-  font-weight: bolder;
-  color: #999;
-}
-
-.row-two {
-  margin-right: 0;
 }
 
 .col-two {
@@ -305,7 +246,6 @@ img {
 
 .col-three > h5 {
   font-size: 1em;
-  font-weight: bolder;
 }
 
 .hr-2 {
@@ -320,19 +260,12 @@ img {
   flex-wrap: nowrap;
 }
 
-.col-vs-img {
-  padding: 0;
-}
-
 .vs-text {
   padding-left: 1em;
 }
 
 .vs-img {
   width: 4em;
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: 1em;
 }
 
 .vs-img2 {
@@ -345,7 +278,6 @@ img {
 
 .sec1-col3-p1 {
   font-size: 0.9em;
-  font-weight: bolder;
   line-height: 1em;
 }
 
@@ -417,7 +349,7 @@ img {
   font-size: 0.9em;
   font-weight: 600;
   line-height: 1.3em;
-  text-transform: uppercase;
+  
 }
 
 .sec1-col3-input {
@@ -430,7 +362,6 @@ img {
   margin-bottom: 1em;
   background-color: #f61602;
   border: none;
-  text-transform: uppercase;
   font-size: 1em;
   font-weight: bold;
 }
@@ -486,7 +417,6 @@ img {
 .world-title {
   font-size: 1.2em;
   color: #f61602;
-  font-weight: bolder;
   margin: 1em 0 0.4em 0;
 }
 
@@ -522,7 +452,6 @@ img {
 .subscribe-title {
   font-size: 1.2em;
   color: #f61602;
-  font-weight: bolder;
   margin: 1em 0 0.7em 0;
   padding-left: 1em;
 }
@@ -552,7 +481,6 @@ img {
 .subscribe-info > h3,
 .h3-subs-col-right {
   color: black;
-  font-weight: bolder;
   margin-bottom: 1em;
 }
 
@@ -609,13 +537,11 @@ footer {
 
 .p-footer-copy {
   font-size: 0.75em;
-  color: #666;
   margin-top: 1.4em;
 }
 
 .footer-icon {
   font-size: 1.3em;
-  color: #666;
 }
 
 .div-icon {
@@ -623,7 +549,6 @@ footer {
 }
 
 .footer-options > .col-auto {
-  color: #666;
   padding-right: 0;
   padding-left: 0.5em;
   font-size: 0.9em;

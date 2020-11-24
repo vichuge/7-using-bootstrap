@@ -18,24 +18,11 @@
     margin-top: 0;
   }
 
-  .user {
-    display: none;
-  }
-
-  .hamburguer {
-    display: inline;
-    margin-left: 1em;
-  }
-
   .second-nav,
   .third-nav {
     display: none;
   }
-
-  .navbar1-left {
-    display: none;
-  }
-
+  
   .email-section {
     max-width: 20em;
     margin-bottom: 2em;
@@ -71,14 +58,6 @@
   .nav-bar {
     display: flex;
     flex-wrap: nowrap;
-  }
-
-  .login {
-    display: none;
-  }
-
-  .user {
-    display: inline;
   }
 
   .underline {
@@ -140,14 +119,6 @@
 @media (max-width: 500px) {
   .img-logo {
     width: 5em;
-  }
-
-  .suscribe-btn {
-    display: none;
-  }
-
-  .user {
-    display: none;
   }
 
   .world-side-img {
