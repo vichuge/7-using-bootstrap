@@ -30,8 +30,8 @@
 
 👤 **Alexis Varela**
 
-- GitHub: [@vichuge](https://github.com/vichuge)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victor-pacheco-7946aab2/)
+- GitHub: [@alexisbec](https://github.com/alexisbec)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alexis-varela-2584111b7/)
 
 ## 🤝 Contributing
 
