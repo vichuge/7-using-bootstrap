@@ -142,6 +142,19 @@ p {
   font-size: 14px;
 }
 
+.col-three > p {
+  font-size: 0.8em;
+}
+
+.world-art > p {
+  margin-top: 0.8em;
+}
+
+.subscribe-info > p {
+  color: #666;
+  font-size: 0.8em;
+}
+
 .description > p:first-child {
   line-height: 1.2em;
   margin-top: 1em;
@@ -293,10 +306,6 @@ img {
 .col-three > h5 {
   font-size: 1em;
   font-weight: bolder;
-}
-
-.col-three > p {
-  font-size: 0.8em;
 }
 
 .hr-2 {
@@ -455,14 +464,6 @@ img {
   margin-bottom: 1em;
 }
 
-/*.magazine-art > div {
-  display: flex;
-  font-size: 0.8em;
-  align-items: center;
-  color: #f61602;
-  margin-bottom: 0.5em;
-}*/
-
 .magazine-art > div > p:first-child {
   background-color: #f61602;
   color: white;
@@ -491,10 +492,6 @@ img {
 
 .world-art {
   font-weight: 600;
-}
-
-.world-art > p {
-  margin-top: 0.8em;
 }
 
 .world-side {
@@ -557,11 +554,6 @@ img {
   color: black;
   font-weight: bolder;
   margin-bottom: 1em;
-}
-
-.subscribe-info > p {
-  color: #666;
-  font-size: 0.8em;
 }
 
 .subscribe-btn {
