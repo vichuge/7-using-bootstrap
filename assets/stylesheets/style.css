@@ -499,7 +499,7 @@ img {
 }
 
 .img-container {
-  padding: 1em 2em;
+  padding: 1em 2em 0 .5em;
 }
 
 .image-top {
@@ -545,9 +545,8 @@ img {
   height: 100%;
 }
 
-.subs-border {
+.newl-row {
   border: 1px solid #ebebeb;
-  margin-left: .2em;
 }
 
 .subs-col-right {
