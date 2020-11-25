@@ -107,10 +107,6 @@
     flex-direction: column;
   }
 
-  .ml-auto {
-    margin-left: 0 !important;
-  }
-
   .p-footer-copy {
     margin-top: 0.5em;
   }
