@@ -1,11 +1,6 @@
 /* General */
-body {
-  background-color: #f4f5f6;
-}
-
 h3 {
   font-size: 0.9em;
-  font-weight: bolder;
 }
 
 h4 {
@@ -29,26 +24,16 @@ article {
   cursor: pointer;
 }
 
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 /* Container */
 .container {
   max-width: 1325px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
-  padding: 0;
 }
 
 /* Nav bars */
 .nav-bar {
   background-color: #ff0500;
   padding: 0.3em 1em;
-  color: white;
-  font-weight: 700;
-  margin-top: 0;
 }
 
 .navbar1-left {
@@ -58,14 +43,6 @@ article {
 .navbar1-left,
 .navbar1-right {
   margin-top: 2.5em;
-}
-
-.navbar1-center {
-  justify-content: center;
-}
-
-.date {
-  font-weight: 200;
 }
 
 .img-logo {
@@ -84,9 +61,7 @@ p {
 .suscribe-btn {
   background-color: #ffe400;
   border: none;
-  border-radius: 15px;
   padding: 0.1em 0.9em;
-  font-weight: 700;
   margin-right: 1em;
 }
 
@@ -95,7 +70,6 @@ p {
 }
 
 .second-nav {
-  font-weight: 600;
   padding: 1em 0;
   font-size: 0.9em;
 }
@@ -126,14 +100,11 @@ p {
 
 .description > p:last-child {
   font-size: 0.8em;
-  font-weight: 500;
   margin-top: 0.5em;
 }
 
 .magazine-art > div {
-  display: flex;
   font-size: 0.8em;
-  align-items: center;
   color: #f61602;
   margin-bottom: 0.5em;
 }
@@ -144,19 +115,10 @@ p {
 }
 
 .third-nav {
-  font-weight: 600;
   font-size: 0.8em;
   padding: 0.8em;
   border-top: 2px solid #f4f5f6;
   border-bottom: 2px solid#f4f5f6;
-}
-
-.trending {
-  color: black;
-}
-
-.search {
-  font-weight: 200;
 }
 
 .search > p > i {
@@ -164,26 +126,16 @@ p {
 }
 
 /* Section 1 */
-.sticky-pos {
-  position: sticky !important;
-  top: 1em;
-}
-
 img {
   width: 100%;
   height: auto;
 }
 
 .art-img-1-p {
-  position: absolute;
   color: #ff0500;
   background-color: rgba(255, 255, 255, 0.8);
   bottom: 0;
   padding: 0.3em 0.6em 0.1em 0.6em;
-}
-
-.art-divimg-1 {
-  position: relative;
 }
 
 .sec-1 {
@@ -210,7 +162,6 @@ img {
 /* Section 2 */
 .h3-2 {
   font-size: 0.9em;
-  font-weight: 400;
 }
 
 .col22-p {
@@ -221,7 +172,6 @@ img {
 
 .col-two {
   padding-right: 1.5em;
-  padding-left: 0;
 }
 
 .second-row {
@@ -229,19 +179,16 @@ img {
 }
 
 /* Section 3 */
-
 .third-row {
   margin-top: 2em;
 }
 
 .third-row-img {
-  width: 75%;
   height: auto;
 }
 
 .more-stories-art {
   margin-bottom: 1em;
-  flex-wrap: nowrap;
 }
 
 .col-three > h5 {
@@ -256,10 +203,6 @@ img {
   margin-top: 1em;
 }
 
-.vsrow {
-  flex-wrap: nowrap;
-}
-
 .vs-text {
   padding-left: 1em;
 }
@@ -270,10 +213,6 @@ img {
 
 .vs-img2 {
   margin-right: 0.2em;
-}
-
-.opinion-row {
-  flex-wrap: nowrap;
 }
 
 .sec1-col3-p1 {
@@ -289,7 +228,6 @@ img {
 }
 
 .sec1-col3-bold1 {
-  font-weight: bold;
   font-size: 1em;
   line-height: 1em;
 }
@@ -299,12 +237,10 @@ img {
   border: none;
   height: 1px;
   background-color: #d9d9d9;
-  margin-bottom: 0;
   margin-top: 0.1em;
 }
 
 .hr-31 {
-  position: relative;
   margin-top: 1.5em;
 }
 
@@ -313,12 +249,7 @@ img {
 }
 
 .p-bet-hr {
-  position: absolute;
-  border-radius: 50%;
-  background-color: black;
-  color: #d6d6d6;
   padding: 0.2em 0.4em;
-  font-weight: bold;
   top: 0.6em;
   left: 45%;
 }
@@ -342,17 +273,14 @@ img {
 
 .sec1-col3-space2 {
   padding-top: 1em;
-  flex-wrap: nowrap;
 }
 
 .sec1-col2-email-p {
   font-size: 0.9em;
-  font-weight: 600;
   line-height: 1.3em;
 }
 
 .sec1-col3-input {
-  border-radius: 0;
   font-size: 0.9em;
 }
 
@@ -360,18 +288,7 @@ img {
   margin-top: 0.1em;
   margin-bottom: 1em;
   background-color: #f61602;
-  border: none;
   font-size: 1em;
-  font-weight: bold;
-}
-
-.sec1-footer {
-  align-items: center;
-  justify-content: center;
-}
-
-.no-margin {
-  margin: 0;
 }
 
 .sec1-footer-p {
@@ -383,7 +300,6 @@ img {
 
 .in-the-magazine {
   margin: 1em 3em;
-  font-weight: 600;
 }
 
 .magazine-art {
@@ -396,7 +312,6 @@ img {
 
 .magazine-art > div > p:first-child {
   background-color: #f61602;
-  color: white;
   margin-right: 0.7em;
   padding: 3px 7px;
 }
@@ -405,7 +320,6 @@ img {
 
 .editors-row {
   margin: 1em 3em;
-  font-weight: 700;
 }
 
 /* World Section */
@@ -419,31 +333,18 @@ img {
   margin: 1em 0 0.4em 0;
 }
 
-.world-art {
-  font-weight: 600;
-}
-
-.world-side {
-  padding: 0;
-}
-
 .world-side-row {
   margin-bottom: 0.5em;
   font-size: 0.9em;
-  font-weight: 600;
-  flex-wrap: nowrap;
 }
 
 .world-side-img {
   padding-right: 0.5em;
-  width: 100%;
   max-width: 8em;
 }
 
 /* Subscribe Footer */
-
 .subscribe-footer {
-  background-color: #f4f5f6;
   padding-top: 1.5em;
   padding-bottom: 2em;
 }
@@ -467,7 +368,6 @@ img {
 }
 
 .image-bottom {
-  width: 100%;
   max-width: 10em;
   min-width: 5em;
   height: auto;
@@ -479,7 +379,6 @@ img {
 
 .subscribe-info > h3,
 .h3-subs-col-right {
-  color: black;
   margin-bottom: 1em;
 }
 
@@ -488,27 +387,12 @@ img {
   margin-top: 1em;
 }
 
-.newsletter-container {
-  padding-right: 0;
-}
-
-.subs-img-right {
-  width: 100%;
-  height: 100%;
-}
-
 .newl-row {
   border: 1px solid #ebebeb;
 }
 
-.subs-col-right {
-  padding-left: 0;
-}
-
 .subs-btn {
   font-size: 0.8em;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .p-subs-col-right {
@@ -543,16 +427,7 @@ footer {
   font-size: 1.3em;
 }
 
-.div-icon {
-  padding-left: 0;
-}
-
 .footer-options > .col-auto {
-  padding-right: 0;
   padding-left: 0.5em;
   font-size: 0.9em;
-}
-
-.option-bold {
-  font-weight: bold;
 }
