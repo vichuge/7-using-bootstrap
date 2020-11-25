@@ -50,12 +50,12 @@ article {
   height: auto;
 }
 
-p {
-  margin-bottom: 0;
-}
-
 .text-right {
   font-size: 1.1em;
+}
+
+.login:hover {
+  cursor: pointer;
 }
 
 .suscribe-btn {
@@ -63,6 +63,10 @@ p {
   border: none;
   padding: 0.1em 0.9em;
   margin-right: 1em;
+}
+
+.suscribe-btn:hover {
+  cursor: pointer;
 }
 
 .column-lg-5 {
@@ -78,6 +82,14 @@ p {
   border-right: 1px solid #888;
   padding: 0 1%;
   font-size: 14px;
+}
+
+.second-nav > div:hover {
+  cursor: pointer;
+}
+
+.third-nav > div:hover {
+  cursor: pointer;
 }
 
 .col-three > p {
