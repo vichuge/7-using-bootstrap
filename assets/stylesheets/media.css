@@ -1,0 +1,127 @@
+@media (max-width: 992px) {
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .img-logo {
+    width: 11em;
+  }
+
+  .navbar1-center {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  .navbar1-right {
+    margin-top: 0;
+  }
+
+  .second-nav,
+  .third-nav {
+    display: none;
+  }
+
+  .email-section {
+    max-width: 20em;
+    margin-bottom: 2em;
+  }
+
+  .in-the-magazine,
+  .editors-row,
+  .world-section {
+    margin: 0;
+  }
+
+  .last-world-section {
+    margin-bottom: 2em;
+  }
+
+  .subs-img-right {
+    width: 100%;
+    height: 100%;
+    max-height: 13em;
+  }
+
+  .subscribe-footer > * {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .img-container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .underline {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .p-underline {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .subscribe-info {
+    padding-left: 0;
+    padding-top: 2em;
+    text-align: center;
+  }
+
+  .sec1-col3-email-btn {
+    font-size: 0.7em;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-top {
+    top: 10%;
+    left: 10%;
+    width: 10em;
+    height: auto;
+  }
+
+  .image-bottom {
+    width: 100%;
+    max-width: 10em;
+    min-width: 5em;
+    height: auto;
+  }
+
+  .world-side-row {
+    margin-top: 1em;
+  }
+
+  .first-footer {
+    flex-direction: column;
+  }
+
+  .p-footer-copy {
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-logo {
+    width: 7em;
+  }
+
+  .world-side-img {
+    width: 50%;
+  }
+
+  .logo-2 {
+    width: 100%;
+  }
+}

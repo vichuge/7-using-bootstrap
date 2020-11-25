@@ -1,0 +1,445 @@
+/* General */
+h3 {
+  font-size: 0.9em;
+}
+
+h4 {
+  margin-top: 0.7em;
+  font-size: 1.5em;
+  line-height: 0.9em;
+}
+
+hr {
+  margin-bottom: 0.5em;
+  margin-top: 0.4em;
+}
+
+article {
+  margin-top: 1em;
+}
+
+.underline:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff0500;
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  max-width: 1325px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav bars */
+.nav-bar {
+  background-color: #ff0500;
+  padding: 0.3em 1em;
+}
+
+.navbar1-left {
+  padding-left: 1em;
+}
+
+.navbar1-left,
+.navbar1-right {
+  margin-top: 2.5em;
+}
+
+.img-logo {
+  width: 390px;
+  height: auto;
+}
+
+.text-right {
+  font-size: 1.1em;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+.suscribe-btn {
+  background-color: #ffe400;
+  border: none;
+  padding: 0.1em 0.9em;
+  margin-right: 1em;
+}
+
+.suscribe-btn:hover {
+  cursor: pointer;
+}
+
+.column-lg-5 {
+  padding-right: 1em;
+}
+
+.second-nav {
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.second-nav > div {
+  border-right: 1px solid #888;
+  padding: 0 1%;
+  font-size: 14px;
+}
+
+.magazine-art > div {
+  font-size: 0.8em;
+  color: #f61602;
+  margin-bottom: 0.5em;
+}
+
+.second-nav > div:hover {
+  cursor: pointer;
+}
+
+.third-nav > div:hover {
+  cursor: pointer;
+}
+
+.col-three > p {
+  font-size: 0.8em;
+}
+
+.world-art > p {
+  margin-top: 0.8em;
+}
+
+.subscribe-info > p {
+  font-size: 0.8em;
+}
+
+.description > p:first-child {
+  line-height: 1.2em;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.description > p:last-child {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+.second-nav > div:last-child,
+.second-nav > div:nth-last-child(2) {
+  border-right: none;
+}
+
+.third-nav {
+  font-size: 0.8em;
+  padding: 0.8em;
+  border-top: 2px solid #f4f5f6;
+  border-bottom: 2px solid#f4f5f6;
+}
+
+.search > p > i {
+  padding-left: 0.5em;
+}
+
+/* Section 1 */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.art-img-1-p {
+  color: #ff0500;
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  padding: 0.3em 0.6em 0.1em 0.6em;
+}
+
+.sec-1 {
+  padding: 1em;
+}
+
+.sec1-art-p {
+  margin-top: 0.7em;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.sec1-art-p2 {
+  margin-top: 0.7em;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  cursor: pointer;
+}
+
+.sec1-art-p2:hover {
+  color: #ff0500;
+}
+
+/* Section 2 */
+.h3-2 {
+  font-size: 0.9em;
+}
+
+.col22-p {
+  margin-top: 1em;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+.col-two {
+  padding-right: 1.5em;
+}
+
+.second-row {
+  margin-top: 2em;
+}
+
+/* Section 3 */
+.third-row {
+  margin-top: 2em;
+}
+
+.third-row-img {
+  height: auto;
+}
+
+.more-stories-art {
+  margin-bottom: 1em;
+}
+
+.col-three > h5 {
+  font-size: 1em;
+}
+
+.hr-2 {
+  border: none;
+  height: 4px;
+  background-color: #d9d9d9;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.vs-text {
+  padding-left: 1em;
+}
+
+.vs-img {
+  width: 4em;
+}
+
+.vs-img2 {
+  margin-right: 0.2em;
+}
+
+.sec1-col3-p1 {
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
+.sec1-col3-p2 {
+  font-size: 0.8em;
+  line-height: 1em;
+  color: #9a9a9a;
+  margin-top: 1em;
+}
+
+.sec1-col3-bold1 {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.hr-31,
+.hr-32 {
+  border: none;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin-top: 0.1em;
+}
+
+.hr-31 {
+  margin-top: 1.5em;
+}
+
+.hr-32 {
+  margin-bottom: 1.5em;
+}
+
+.p-bet-hr {
+  padding: 0.2em 0.4em;
+  top: 0.6em;
+  left: 45%;
+}
+
+.sec1-col3-space {
+  margin-top: 0.4em;
+}
+
+.logo-n {
+  background-color: #f72210;
+  width: 2em;
+  height: auto;
+  margin-top: 0.3em;
+}
+
+.email-section {
+  border: 1px solid #e5e5e5;
+  margin-top: 2em;
+  background-color: #f4f5f6;
+}
+
+.sec1-col3-space2 {
+  padding-top: 1em;
+}
+
+.sec1-col2-email-p {
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.sec1-col3-input {
+  font-size: 0.9em;
+}
+
+.sec1-col3-email-btn {
+  margin-top: 0.1em;
+  margin-bottom: 1em;
+  background-color: #f61602;
+  font-size: 1em;
+}
+
+.sec1-footer-p {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+/* In The Magazine Section */
+
+.in-the-magazine {
+  margin: 1em 3em;
+}
+
+.magazine-art {
+  margin-bottom: 3em;
+}
+
+.magazine-art > img {
+  margin-bottom: 1em;
+}
+
+.magazine-art > div > p:first-child {
+  background-color: #f61602;
+  margin-right: 0.7em;
+  padding: 3px 7px;
+}
+
+/* Editor's Pick Section */
+
+.editors-row {
+  margin: 1em 3em;
+}
+
+/* World Section */
+.world-section {
+  margin: 0 2em 1em 2em;
+}
+
+.world-title {
+  font-size: 1.2em;
+  color: #f61602;
+  margin: 1em 0 0.4em 0;
+}
+
+.world-side-row {
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+.world-side-img {
+  padding-right: 0.5em;
+  max-width: 8em;
+}
+
+/* Subscribe Footer */
+.subscribe-footer {
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+}
+
+.subscribe-title {
+  font-size: 1.2em;
+  color: #f61602;
+  margin: 1em 0 0.7em 0;
+  padding-left: 1em;
+}
+
+.img-container {
+  padding: 1em 2em 0 0.5em;
+}
+
+.image-top {
+  top: 10%;
+  left: 30%;
+  width: 10em;
+  height: auto;
+}
+
+.image-bottom {
+  max-width: 10em;
+  min-width: 5em;
+  height: auto;
+}
+
+.subscribe-info {
+  padding-left: 3em;
+}
+
+.subscribe-info > h3,
+.h3-subs-col-right {
+  margin-bottom: 1em;
+}
+
+.subscribe-btn {
+  padding: 0.4em 1em;
+  margin-top: 1em;
+}
+
+.newl-row {
+  border: 1px solid #ebebeb;
+}
+
+.subs-btn {
+  font-size: 0.8em;
+}
+
+.p-subs-col-right {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.h3-subs-col-right {
+  padding-top: 2.5em;
+}
+
+.subs-div-form {
+  margin-top: 1em;
+}
+
+/* Footer */
+footer {
+  padding: 2em 1em;
+}
+
+.logo-2 {
+  width: 14em;
+  height: auto;
+}
+
+.p-footer-copy {
+  font-size: 0.75em;
+  margin-top: 1.4em;
+}
+
+.footer-icon {
+  font-size: 1.3em;
+}
+
+.footer-options > .col-auto {
+  padding-left: 0.5em;
+  font-size: 0.9em;
+}
