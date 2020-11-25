@@ -84,6 +84,12 @@ article {
   font-size: 14px;
 }
 
+.magazine-art > div {
+  font-size: 0.8em;
+  color: #f61602;
+  margin-bottom: 0.5em;
+}
+
 .second-nav > div:hover {
   cursor: pointer;
 }
@@ -113,12 +119,6 @@ article {
 .description > p:last-child {
   font-size: 0.8em;
   margin-top: 0.5em;
-}
-
-.magazine-art > div {
-  font-size: 0.8em;
-  color: #f61602;
-  margin-bottom: 0.5em;
 }
 
 .second-nav > div:last-child,
