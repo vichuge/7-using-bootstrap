@@ -148,6 +148,7 @@ img {
   background-color: rgba(255, 255, 255, 0.8);
   bottom: 0;
   padding: 0.3em 0.6em 0.1em 0.6em;
+  margin-bottom: 0;
 }
 
 .sec-1 {
