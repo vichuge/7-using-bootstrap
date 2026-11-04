@@ -1,1685 +1,861 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+      name="description"
+      content="A responsive news homepage built with Bootstrap 5: featured stories, opinion, magazine highlights and newsletter sign-up.">
+    <meta name="theme-color" content="#d70a00">
+    <title>Newsweek | Bootstrap Replica</title>
 
-    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/png" href="assets/img/logo-n.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-
-    <title>Newsweek</title>
-
-    <link rel="stylesheet" href="assets/stylesheets/style.css" />
-    <link rel="stylesheet" href="assets/stylesheets/media.css" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/media.css">
   </head>
 
-  <body class="bg-light">
-    <div class="container bg-white p-0">
-      <header>
-        <div class="row mx-0 nav-bar text-white font-weight-bold mt-0">
-          <div class="col-lg-3 navbar1-left d-none d-lg-block text-uppercase">
-            <div class="row mx-0">
-              <div class="col-lg-12">
-                <p><i class="fas fa-cloud-sun-rain"></i> 29° Mérida, MX ></p>
-              </div>
-            </div>
-            <div class="row mx-0">
-              <div class="col-lg-12 date font-weight-light">
-                <p>Fri, Nov 20, 2020</p>
-              </div>
-            </div>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="page container-xxl bg-white px-0">
+      <!-- ============ HEADER ============ -->
+      <header class="site-header">
+        <div class="topbar">
+          <div class="topbar-left d-none d-lg-block">
+            <p class="topbar-weather mb-0">
+              <i class="fa-solid fa-cloud-sun-rain" aria-hidden="true"></i>
+              29° Mérida, MX
+            </p>
+            <p class="topbar-date mb-0" id="current-date">Friday, Nov 20, 2020</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-auto d-flex justify-content-lg-center navbar1-center">
-            <img class="img-logo" src="assets/img/svg/logo.svg" alt="logo" />
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 navbar1-right p-r-0">
-            <div class="row mx-0 d-flex align-items-end justify-content-end">
-              <div class="column-lg-5">
-                <a href="#" class="login d-none d-xl-block text-decoration-none text-white">LOGIN</a>
-                <div class="user d-lg-block d-xl-none">
-                  <i class="fas fa-user"></i>
-                </div>
-              </div>
-              <div class="column-lg-7 d-none d-sm-block">
-                <a class="suscribe-btn rounded-pill font-weight-bold text-dark text-decoration-none p-2">SUBSCRIBE ></a>
-              </div>
-              <div class="d-lg-none d-xl-none">
-                <i class="fas fa-bars"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mx-0 second-nav mr-3 font-weight-bold">
-          <div class="col-auto text-dark text-decoration-none">
-            <a href="#" class="text-dark text-decoration-none">U.S.</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">World</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Business</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Tech & Science</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Culture</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Newsgeek</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Sports</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Health</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">The Debate</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Vantage</a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="text-dark text-decoration-none">Weather</a>
-          </div>
-          <div class="col-auto font-weight-light text-secondary">
-            <a href="#" class="text-secondary text-decoration-none">Search <i class="fas fa-search"></i></a>
+
+          <h1 class="topbar-brand mb-0">
+            <a href="index.html" class="d-inline-block">
+              <img
+                class="brand-logo"
+                src="assets/img/logo.svg"
+                alt="Newsweek"
+                width="390"
+                height="100">
+            </a>
+          </h1>
+
+          <div class="topbar-right">
+            <a href="#" class="topbar-login d-none d-md-inline">Log in</a>
+            <a href="#subscribe" class="btn btn-subscribe rounded-pill d-none d-sm-inline-block">
+              Subscribe <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+            </a>
+            <button
+              class="btn topbar-icon d-md-none"
+              type="button"
+              aria-label="Log in"
+            >
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+            </button>
+            <button
+              class="btn topbar-icon d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobile-menu"
+              aria-controls="mobile-menu"
+              aria-label="Open menu"
+            >
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
-        <div class="row mx-0 third-nav font-weight-bold">
-          <div class="col-auto"><a href="#" class="text-dark text-decoration-none">TRENDING</a></div>
-          <div class="col-auto"><a href="#" class="text-secondary text-decoration-none">JOE BIDEN</a></div>
-          <div class="col-auto"><a href="#" class="text-secondary text-decoration-none">DONALD TRUMP</a></div>
-          <div class="col-auto"><a href="#" class="text-secondary text-decoration-none">2020 ELECTION</a></div>
-          <div class="col-auto"><a href="#" class="text-secondary text-decoration-none">CORONAVIRUS</a></div>
-          <div class="col-auto"><a href="#" class="text-secondary text-decoration-none">STIMULUS PACKAGE</a></div>
-        </div>
+
+        <nav class="main-nav d-none d-lg-flex" aria-label="Sections">
+          <ul class="main-nav-list list-unstyled mb-0">
+            <li class="main-nav-item"><a class="main-nav-link" href="#">U.S.</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#world">World</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Business</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Tech &amp; Science</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#culture-travel">Culture</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Newsgeek</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Sports</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Health</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#the-debate">The Debate</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Vantage</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Weather</a></li>
+          </ul>
+          <form class="nav-search" role="search" action="#">
+            <label class="visually-hidden" for="search-desktop">Search</label>
+            <input
+              class="nav-search-input"
+              id="search-desktop"
+              type="search"
+              placeholder="Search">
+            <button class="nav-search-btn" type="submit" aria-label="Submit search">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+          </form>
+        </nav>
+
+        <nav class="trending-nav" aria-label="Trending topics">
+          <span class="trending-label">Trending</span>
+          <ul class="trending-list list-unstyled mb-0">
+            <li><a class="trending-link" href="#">Joe Biden</a></li>
+            <li><a class="trending-link" href="#">Donald Trump</a></li>
+            <li><a class="trending-link" href="#">2020 Election</a></li>
+            <li><a class="trending-link" href="#">Coronavirus</a></li>
+            <li><a class="trending-link" href="#">Stimulus Package</a></li>
+          </ul>
+        </nav>
       </header>
-      <div class="row mx-0 sec-1">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <h3 class="font-weight-bolder text-secondary text-uppercase">
-            Featured stories
-          </h3>
-          <article>
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/politic-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                politic
-              </p>
-            </div>
-            <h4 onClick="myFunction();" class="underline font-weight-bold">
-              Trump team rejects Georgia recount confirming Biden win
-            </h4>
-            <p onClick="myFunction();" class="sec1-art-p text-secondary">
-              President-elect Joe Biden beat his Republican rival in the Peach
-              State by around 12,000 votes according to the recount.
-            </p>
-            <hr />
-          </article>
-          <article>
-            <h3
-              class="font-weight-bolder sec1-art-p2 text-secondary text-uppercase"
-            >
-              Democrats Lose Patience With GSA's Biden Transition Delay, Demand
-              Answers
-            </h3>
-            <hr />
-          </article>
-          <article>
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/politic-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                politic
-              </p>
-            </div>
-            <h4 onClick="myFunction();" class="underline font-weight-bold">
-              Trump team rejects Georgia recount confirming Biden win
-            </h4>
-            <p onClick="myFunction();" class="sec1-art-p text-secondary">
-              President-elect Joe Biden beat his Republican rival in the Peach
-              State by around 12,000 votes according to the recount.
-            </p>
-            <hr />
-          </article>
-          <article>
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/politic-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                politic
-              </p>
-            </div>
-            <h4 onClick="myFunction();" class="underline font-weight-bold">
-              Trump team rejects Georgia recount confirming Biden win
-            </h4>
-            <p onClick="myFunction();" class="sec1-art-p text-secondary">
-              President-elect Joe Biden beat his Republican rival in the Peach
-              State by around 12,000 votes according to the recount.
-            </p>
-            <hr />
-          </article>
-          <article>
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/politic-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                politic
-              </p>
-            </div>
-            <h4 onClick="myFunction();" class="underline font-weight-bold">
-              Trump team rejects Georgia recount confirming Biden win
-            </h4>
-            <p onClick="myFunction();" class="sec1-art-p text-secondary">
-              President-elect Joe Biden beat his Republican rival in the Peach
-              State by around 12,000 votes according to the recount.
-            </p>
-            <hr />
-          </article>
-          <article>
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/politic-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                politic
-              </p>
-            </div>
-            <h4 onClick="myFunction();" class="underline font-weight-bold">
-              Trump team rejects Georgia recount confirming Biden win
-            </h4>
-            <p onClick="myFunction();" class="sec1-art-p text-secondary">
-              President-elect Joe Biden beat his Republican rival in the Peach
-              State by around 12,000 votes according to the recount.
-            </p>
-            <hr />
-          </article>
-          <article>
-            <h3
-              class="font-weight-bolder sec1-art-p2 text-secondary text-uppercase"
-            >
-              Democrats Lose Patience With GSA's Biden Transition Delay, Demand
-              Answers
-            </h3>
-            <hr />
-          </article>
+
+      <!-- Mobile menu -->
+      <div
+        class="offcanvas offcanvas-end mobile-menu"
+        tabindex="-1"
+        id="mobile-menu"
+        role="dialog"
+        aria-labelledby="mobile-menu-title"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title h5 mb-0" id="mobile-menu-title">Sections</h2>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close menu"
+          ></button>
         </div>
-        <div class="col-lg-5 col-md-6 col-sm-12">
-          <h3 class="font-weight-bolder text-secondary text-uppercase">
-            Top Story
-          </h3>
-          <article>
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/politic-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                politic
+        <div class="offcanvas-body">
+          <form class="nav-search mb-4" role="search" action="#">
+            <label class="visually-hidden" for="search-mobile">Search</label>
+            <input
+              class="nav-search-input"
+              id="search-mobile"
+              type="search"
+              placeholder="Search">
+            <button class="nav-search-btn" type="submit" aria-label="Submit search">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+          </form>
+          <ul class="mobile-menu-list list-unstyled">
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">U.S.</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#world">World</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Business</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Tech &amp; Science</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#culture-travel">Culture</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Newsgeek</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Sports</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Health</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#the-debate">The Debate</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Vantage</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Weather</a></li>
+          </ul>
+          <a href="#subscribe" class="btn btn-subscribe rounded-pill w-100 mt-3">
+            Subscribe <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <main id="main-content" tabindex="-1">
+        <!-- ============ TOP GRID ============ -->
+        <div class="px-3 px-md-4 py-4">
+        <div class="row g-4 g-xl-5">
+          <!-- Featured stories -->
+          <section class="col-md-6 col-lg-4 column-divider" aria-labelledby="featured-title">
+            <h2 class="section-label" id="featured-title">Featured stories</h2>
+
+            <article class="story">
+              <div class="story-media">
+                <img class="story-media-img"
+                  src="assets/img/world-img.jpg"
+                  alt="Historic red-brick building at sunset"
+                  width="500"
+                  height="333">
+                <span class="story-tag">Politics</span>
+              </div>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Georgia Recount Confirms Biden Win as Trump Team Pushes Back</a>
+              </h3>
+              <p class="story-dek">
+                President-elect Joe Biden beat his Republican rival in the Peach
+                State by around 12,000 votes, according to the hand recount.
               </p>
-            </div>
-            <h4 onClick="myFunction();" class="underline font-weight-bold">
-              Stimulus Package Needed This Year, Economists Warn Amid COVID-19
-              Turmoil
-            </h4>
-            <p onClick="myFunction();" class="sec1-art-p">
-              President-elect Joe Biden beat his Republican rival in the Peach
-              State by around 12,000 votes according to the recount.
-            </p>
-          </article>
-          <div class="row mx-0 second-row">
-            <h3 class="font-weight-bolder h3-2 text-secondary text-uppercase">
-              My turn
-            </h3>
-            <div class="row mx-0 row-two m-r-0">
-              <div class="col-lg-4 col-md-4 col-two pl-0">
-                <img
-                  class="img-col-2-1"
-                  src="assets/img/my-turn-img.jpg"
-                  alt="doctor-img"
-                />
-                <p class="col22-p text-secondary">
-                  <b
-                    >'I'm a Doctor in Illinois, We're Scared of Running Out of
-                    Hospital Beds'</b
-                  >
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-two pl-0">
-                <img
-                  class="img-col-2-1"
-                  src="assets/img/my-turn-img.jpg"
-                  alt="doctor-img"
-                />
-                <p class="col22-p text-secondary">
-                  <b
-                    >'I'm a Doctor in Illinois, We're Scared of Running Out of
-                    Hospital Beds'</b
-                  >
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-two pl-0">
-                <img
-                  class="img-col-2-1"
-                  src="assets/img/my-turn-img.jpg"
-                  alt="doctor-img"
-                />
-                <p class="col22-p text-secondary">
-                  <b
-                    >'I'm a Doctor in Illinois, We're Scared of Running Out of
-                    Hospital Beds'</b
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row mx-0 second-row">
-            <h3 class="font-weight-bolder h3-2 text-secondary text-uppercase">
-              Culture & travel
-            </h3>
-            <div class="row mx-0 row-two m-r-0">
-              <div class="col-lg-4 col-md-4 col-two pl-0">
-                <img
-                  class="img-col-2-1"
-                  src="assets/img/my-turn-img.jpg"
-                  alt="doctor-img"
-                />
-                <p class="col22-p text-secondary">
-                  <b
-                    >'I'm a Doctor in Illinois, We're Scared of Running Out of
-                    Hospital Beds'</b
-                  >
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-two pl-0">
-                <img
-                  class="img-col-2-1"
-                  src="assets/img/my-turn-img.jpg"
-                  alt="doctor-img"
-                />
-                <p class="col22-p text-secondary">
-                  <b
-                    >'I'm a Doctor in Illinois, We're Scared of Running Out of
-                    Hospital Beds'</b
-                  >
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-two pl-0">
-                <img
-                  class="img-col-2-1"
-                  src="assets/img/my-turn-img.jpg"
-                  alt="doctor-img"
-                />
-                <p class="col22-p text-secondary">
-                  <b
-                    >'I'm a Doctor in Illinois, We're Scared of Running Out of
-                    Hospital Beds'</b
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <section class="third-row">
-            <h3 class="font-weight-bolder h3-2 text-secondary text-uppercase">
-              more stories
-            </h3>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
             </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
+
+            <article class="story story-headline">
+              <h3 class="story-title-sm">
+                <a href="#" class="stretched-link story-link">Democrats Lose Patience With GSA's Biden Transition Delay, Demand Answers</a>
+              </h3>
             </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
+
+            <article class="story">
+              <div class="story-media">
+                <img class="story-media-img"
+                  src="assets/img/health-therapy.jpg"
+                  alt="Physical therapist helping a patient stretch with a resistance band"
+                  width="500"
+                  height="333"
+                  loading="lazy">
+                <span class="story-tag">Health</span>
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Physical Therapy Clinics Adapt as Patients Return After Lockdowns</a>
+              </h3>
+              <p class="story-dek">
+                Clinics are spacing out appointments, sanitizing between every
+                session and moving some follow-ups to video calls.
+              </p>
             </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
+
+            <article class="story">
+              <div class="story-media">
+                <img class="story-media-img"
+                  src="assets/img/culture-concert.jpg"
+                  alt="Singer performing on stage surrounded by dancers"
+                  width="397"
+                  height="265"
+                  loading="lazy">
+                <span class="story-tag">Culture</span>
               </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Live Music Plans Its Comeback With Socially Distanced Concerts</a>
+              </h3>
+              <p class="story-dek">
+                Promoters are testing drive-in shows, pod seating and rapid
+                testing to bring fans back before the end of the year.
+              </p>
             </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
-            </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
-            </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
-            </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
-            </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
-            </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
-            </article>
-            <hr />
-            <article class="row mx-0 more-stories-art flex-nowrap d-flex">
-              <div class="col-auto p-0">
-                <img
-                  class="third-row-img w-75"
-                  src="assets/img/more-stories-img.jpg"
-                  alt="more-stories"
-                />
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-three p-0">
-                <h5 class="underline font-weight-bold">
-                  <b
-                    >High-risk People May Get COVID Vaccine Before Christmas
-                    Pfizer Says</b
-                  >
-                </h5>
-                <p class="p-underline font-weight-bold text-secondary">
-                  The move comes after Pfizer-BioNTech claimed their vaccine is
-                  95 percent effective in preventing COVID.
-                </p>
-              </div>
+
+            <article class="story story-headline">
+              <h3 class="story-title-sm">
+                <a href="#" class="stretched-link story-link">Stimulus Talks Stall Again as Senate Leaves for Thanksgiving</a>
+              </h3>
             </article>
           </section>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12">
-          <h3 class="font-weight-bolder text-secondary text-uppercase">
-            The debate
-          </h3>
-          <hr class="hr-2" />
-          <div class="row mx-0 align-items-center vsrow flex-nowrap d-flex">
-            <div
-              class="col-lg-auto col-md-auto col-sm-2 col-auto col-vs-img p-0"
-            >
-              <img class="vs-img" src="assets/img/image(4).png" alt="versus1" />
-            </div>
-            <div class="col-lg-8 col-md-10 col-sm-10 col-6 p-0-right vs-text">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12 p-0">
-              <hr class="hr-31 mb-0 position-relative" />
-              <p
-                class="p-bet-hr rounded-circle bg-dark text-light position-absolute"
-              >
-                vs
-              </p>
-              <hr class="hr-32" />
-            </div>
-          </div>
-          <div class="row mx-0 align-items-center vsrow flex-nowrap d-flex">
-            <div class="col-lg-9 col-md-10 col-sm-10 col-6 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-            <div class="col-lg-3 col-md-auto col-sm-2 col-auto ml-auto">
-              <img
-                class="vs-img p-0 m-0"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-          </div>
-          <hr class="hr-2" />
-          <h3 class="font-weight-bolder h3-2 text-secondary text-uppercase">
-            Opinion
-          </h3>
-          <div
-            class="row mx-0 align-items-center d-flex opinion-row flex-nowrap"
-          >
-            <div class="col-auto p-0">
-              <img
-                class="vs-img2"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-            <div class="col-9 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0 sec1-col3-space">
-            <div class="col-lg-12 p-0">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 align-items-center d-flex opinion-row flex-nowrap"
-          >
-            <div class="col-auto p-0">
-              <img
-                class="vs-img2"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-            <div class="col-9 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0 sec1-col3-space">
-            <div class="col-lg-12 p-0">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 align-items-center d-flex opinion-row flex-nowrap"
-          >
-            <div class="col-auto p-0">
-              <img
-                class="vs-img2"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-            <div class="col-9 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0 sec1-col3-space">
-            <div class="col-lg-12 p-0">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 align-items-center d-flex opinion-row flex-nowrap"
-          >
-            <div class="col-auto p-0">
-              <img
-                class="vs-img2"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-            <div class="col-9 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0 sec1-col3-space">
-            <div class="col-lg-12 p-0">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 align-items-center d-flex opinion-row flex-nowrap"
-          >
-            <div class="col-auto p-0">
-              <img
-                class="vs-img2"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-            <div class="col-9 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0 sec1-col3-space">
-            <div class="col-lg-12 p-0">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 align-items-center d-flex opinion-row flex-nowrap"
-          >
-            <div class="col-auto p-0">
-              <img
-                class="vs-img2"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-            <div class="col-9 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0 sec1-col3-space">
-            <div class="col-lg-12 p-0">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 align-items-center d-flex opinion-row flex-nowrap"
-          >
-            <div class="col-auto p-0">
-              <img
-                class="vs-img2"
-                src="assets/img/image(4).png"
-                alt="versus1"
-              />
-            </div>
-            <div class="col-9 p-0-right">
-              <p class="sec1-col3-p1">
-                <b
-                  >Science Says Porn Is a Huge Problem. Lawmakers Must Stop
-                  Ignoring It</b
-                >
-              </p>
-              <p class="sec1-col3-p2">
-                BY <span class="sec1-col3-bold1">TERRY SCHILLING</span>
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0 sec1-col3-space">
-            <div class="col-lg-12 p-0">
-              <hr />
-            </div>
-          </div>
-          <div class="row mx-0 justify-content-center">
-            <section class="email-section">
-              <h5 class="d-none">Email Section</h5>
-              <div
-                class="row mx-0 d-flex flex-nowrap sec1-col3-space2 align-items-center"
-              >
-                <div class="col-auto">
-                  <img
-                    class="logo-n"
-                    src="assets/img/logo-n1.png"
-                    alt="logo-n"
-                  />
+
+          <!-- Top story + My turn + Culture & travel + More stories -->
+          <div class="col-md-6 col-lg-5 column-divider">
+            <section aria-labelledby="top-story-title">
+              <h2 class="section-label" id="top-story-title">Top story</h2>
+              <article class="story story-lead">
+                <div class="story-media">
+                  <img class="story-media-img"
+                    src="assets/img/politic-img.jpg"
+                    alt="City skyline with highways at dusk"
+                    width="500"
+                    height="333">
+                  <span class="story-tag">Economy</span>
                 </div>
-                <div class="col-8 p-0-left">
-                  <p class="sec1-col2-email-p text-uppercase font-weight-bold">
-                    Start your day with our top 5 articles
-                  </p>
+                <h3 class="story-title story-title-lg">
+                  <a href="#" class="stretched-link story-link">Stimulus Package Needed This Year, Economists Warn Amid COVID-19 Turmoil</a>
+                </h3>
+                <p class="story-dek">
+                  Without new relief, millions of Americans could lose
+                  unemployment benefits and eviction protections by the end of
+                  December.
+                </p>
+              </article>
+            </section>
+
+            <section class="mt-5" aria-labelledby="my-turn-title">
+              <h2 class="section-label" id="my-turn-title">My turn</h2>
+              <div class="row row-cols-3 g-3">
+                <article class="col story">
+                  <img
+                    class="thumb-square"
+                    src="assets/img/my-turn-img.jpg"
+                    alt="Man in a suit standing outdoors"
+                    width="265"
+                    height="265"
+                    loading="lazy">
+                  <h3 class="story-title-xs">
+                    <a href="#" class="stretched-link story-link">'I'm a Doctor in Illinois. We're Scared of Running Out of Hospital Beds'</a>
+                  </h3>
+                </article>
+                <article class="col story">
+                  <img
+                    class="thumb-square"
+                    src="assets/img/health-therapy.jpg"
+                    alt="Therapist working with a patient"
+                    width="500"
+                    height="333"
+                    loading="lazy">
+                  <h3 class="story-title-xs">
+                    <a href="#" class="stretched-link story-link">'I Became a Physical Therapist at 50. Here's What I Learned'</a>
+                  </h3>
+                </article>
+                <article class="col story">
+                  <img
+                    class="thumb-square"
+                    src="assets/img/newsletter-phone.png"
+                    alt="Hand holding a phone with a news app open"
+                    width="397"
+                    height="265"
+                    loading="lazy">
+                  <h3 class="story-title-xs">
+                    <a href="#" class="stretched-link story-link">'I Quit Doomscrolling for a Month. My Anxiety Dropped'</a>
+                  </h3>
+                </article>
+              </div>
+            </section>
+
+            <section class="mt-5" id="culture-travel" aria-labelledby="culture-title">
+              <h2 class="section-label" id="culture-title">Culture &amp; travel</h2>
+              <div class="row row-cols-3 g-3">
+                <article class="col story">
+                  <img
+                    class="thumb-square"
+                    src="assets/img/culture-concert.jpg"
+                    alt="Performer on a colorful stage"
+                    width="397"
+                    height="265"
+                    loading="lazy">
+                  <h3 class="story-title-xs">
+                    <a href="#" class="stretched-link story-link">Drive-In Concerts Are the Hottest Ticket of the Year</a>
+                  </h3>
+                </article>
+                <article class="col story">
+                  <img
+                    class="thumb-square"
+                    src="assets/img/editors-pick-img.jpg"
+                    alt="Crowd celebrating under fireworks"
+                    width="397"
+                    height="265"
+                    loading="lazy">
+                  <h3 class="story-title-xs">
+                    <a href="#" class="stretched-link story-link">The Festivals Planning a Return in 2021</a>
+                  </h3>
+                </article>
+                <article class="col story">
+                  <img
+                    class="thumb-square"
+                    src="assets/img/world-img.jpg"
+                    alt="Historic red-brick hotel"
+                    width="500"
+                    height="333"
+                    loading="lazy">
+                  <h3 class="story-title-xs">
+                    <a href="#" class="stretched-link story-link">Historic Hotels Reopen With New Safety Rules</a>
+                  </h3>
+                </article>
+              </div>
+            </section>
+
+            <section class="mt-5" aria-labelledby="more-stories-title">
+              <h2 class="section-label" id="more-stories-title">More stories</h2>
+              <ul class="list-unstyled story-list mb-0">
+                <li class="story-list-item">
+                  <article class="story story-row">
+                    <img class="story-row-img"
+                      src="assets/img/more-stories-img.jpg"
+                      alt="Supporters cheering at a rally"
+                      width="95"
+                      height="95"
+                      loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">High-Risk People May Get COVID Vaccine Before Christmas, Pfizer Says</a>
+                      </h3>
+                      <p class="story-dek mb-0">
+                        Pfizer-BioNTech says its vaccine is 95 percent effective
+                        in preventing COVID-19.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row">
+                    <img class="story-row-img"
+                      src="assets/img/world-side-img.jpg"
+                      alt="Man in a suit seated at a desk"
+                      width="95"
+                      height="95"
+                      loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">Kremlin Says It Will Wait for Official U.S. Election Results</a>
+                      </h3>
+                      <p class="story-dek mb-0">
+                        Moscow joins a short list of capitals holding off on
+                        congratulating the president-elect.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row">
+                    <img class="story-row-img"
+                      src="assets/img/editors-pick-img.jpg"
+                      alt="Crowd celebrating under fireworks"
+                      width="397"
+                      height="265"
+                      loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">CDC Urges Americans Not to Travel for Thanksgiving</a>
+                      </h3>
+                      <p class="story-dek mb-0">
+                        Health officials recommend celebrating only with people
+                        in your household this year.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row">
+                    <img class="story-row-img"
+                      src="assets/img/politic-img.jpg"
+                      alt="City skyline at dusk"
+                      width="500"
+                      height="333"
+                      loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">What the Electoral College Calendar Looks Like From Here</a>
+                      </h3>
+                      <p class="story-dek mb-0">
+                        Key dates between now and Inauguration Day, explained.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- The debate + Opinion + Newsletter -->
+          <aside class="col-lg-3" aria-label="Opinion">
+            <section id="the-debate" aria-labelledby="debate-title">
+              <h2 class="section-label" id="debate-title">The debate</h2>
+              <div class="debate">
+                <p class="debate-question">Should schools stay open this winter?</p>
+                <article class="story debate-side">
+                  <img
+                    class="avatar"
+                    src="assets/img/debate-avatar.png"
+                    alt=""
+                    width="63"
+                    height="63"
+                    loading="lazy">
+                  <div>
+                    <h3 class="story-title-sm">
+                      <a href="#" class="stretched-link story-link">Keeping Classrooms Open Is Worth the Effort</a>
+                    </h3>
+                    <p class="byline mb-0">By <span>Maria Lopez</span></p>
+                  </div>
+                </article>
+                <div class="debate-vs" aria-hidden="true"><span>vs</span></div>
+                <article class="story debate-side debate-side-reverse">
+                  <img
+                    class="avatar"
+                    src="assets/img/debate-avatar.png"
+                    alt=""
+                    width="63"
+                    height="63"
+                    loading="lazy">
+                  <div>
+                    <h3 class="story-title-sm">
+                      <a href="#" class="stretched-link story-link">Remote Learning Is the Safer Bet Until Vaccines Arrive</a>
+                    </h3>
+                    <p class="byline mb-0">By <span>James Carter</span></p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="mt-5" aria-labelledby="opinion-title">
+              <h2 class="section-label" id="opinion-title">Opinion</h2>
+              <ul class="list-unstyled story-list mb-0">
+                <li class="story-list-item">
+                  <article class="story story-row story-row-avatar">
+                    <img class="avatar" src="assets/img/debate-avatar.png" alt="" width="63" height="63" loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">The Transition Delay Is a Gift to America's Rivals</a>
+                      </h3>
+                      <p class="byline mb-0">By <span>Daniel Reyes</span></p>
+                    </div>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row story-row-avatar">
+                    <img class="avatar" src="assets/img/debate-avatar.png" alt="" width="63" height="63" loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">Small Businesses Can't Survive Another Winter Without Help</a>
+                      </h3>
+                      <p class="byline mb-0">By <span>Laura Chen</span></p>
+                    </div>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row story-row-avatar">
+                    <img class="avatar" src="assets/img/debate-avatar.png" alt="" width="63" height="63" loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">Trust in Vaccines Will Decide How Fast We Recover</a>
+                      </h3>
+                      <p class="byline mb-0">By <span>Samuel Okafor</span></p>
+                    </div>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row story-row-avatar">
+                    <img class="avatar" src="assets/img/debate-avatar.png" alt="" width="63" height="63" loading="lazy">
+                    <div>
+                      <h3 class="story-title-sm">
+                        <a href="#" class="stretched-link story-link">Remote Work Is Here to Stay. Cities Need a Plan</a>
+                      </h3>
+                      <p class="byline mb-0">By <span>Emily Novak</span></p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+
+            <section class="newsletter-card mt-5" aria-labelledby="top5-title">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img class="logo-n" src="assets/img/logo-n.png" alt="" width="29" height="28">
+                <h2 class="newsletter-card-title mb-0" id="top5-title">
+                  Start your day with our top 5 articles
+                </h2>
+              </div>
+              <form class="js-newsletter-form" action="#" novalidate>
+                <label class="visually-hidden" for="top5-email">Email address</label>
+                <input
+                  class="form-control rounded-0 mb-2"
+                  id="top5-email"
+                  name="email"
+                  type="email"
+                  placeholder="Email address"
+                  autocomplete="email"
+                  required>
+                <button class="btn btn-brand w-100" type="submit">
+                  Free sign up <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                </button>
+                <p class="form-feedback mb-0" role="status" aria-live="polite"></p>
+              </form>
+            </section>
+          </aside>
+        </div>
+        </div>
+
+        <!-- ============ IN THE MAGAZINE ============ -->
+        <section class="band px-3 px-md-4" aria-labelledby="magazine-title">
+          <h2 class="band-title" id="magazine-title">
+            <img class="logo-n" src="assets/img/logo-n.png" alt="" width="29" height="28">
+            In the magazine
+          </h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <article class="col story">
+              <img
+                class="thumb-square"
+                src="assets/img/in-the-magazine-img.jpg"
+                alt="Illustration of Donald Trump holding a gas can surrounded by flames"
+                width="311"
+                height="311"
+                loading="lazy">
+              <p class="story-kicker"><span class="kicker-cover">Cover</span> News</p>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Trump Has 70 Days to Undermine Joe Biden, Even if He Eventually Concedes</a>
+              </h3>
+            </article>
+            <article class="col story">
+              <img
+                class="thumb-square thumb-top"
+                src="assets/img/image-top.jpg"
+                alt="Magazine cover titled Exit Strategy"
+                width="360"
+                height="480"
+                loading="lazy">
+              <p class="story-kicker">Politics</p>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Exit Strategy: Pardons, New Regulations and New Judges</a>
+              </h3>
+            </article>
+            <article class="col story">
+              <img
+                class="thumb-square thumb-top"
+                src="assets/img/image-bottom.jpg"
+                alt="Magazine cover featuring President-elect Joe Biden"
+                width="170"
+                height="227"
+                loading="lazy">
+              <p class="story-kicker">Election 2020</p>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Divided Country, Raging Pandemic, Troubled Economy: What's Biden's Plan?</a>
+              </h3>
+            </article>
+            <article class="col story">
+              <img
+                class="thumb-square"
+                src="assets/img/newsletter-phone.png"
+                alt="Phone displaying a news briefing"
+                width="397"
+                height="265"
+                loading="lazy">
+              <p class="story-kicker">Media</p>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Inside the Newsroom: How We Covered the Longest Election Week</a>
+              </h3>
+            </article>
+          </div>
+        </section>
+
+        <!-- ============ EDITOR'S PICK ============ -->
+        <section class="band px-3 px-md-4" aria-labelledby="editors-title">
+          <h2 class="band-title" id="editors-title">
+            <img class="logo-n" src="assets/img/logo-n.png" alt="" width="29" height="28">
+            Editor's pick
+          </h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <article class="col story">
+              <div class="story-media">
+                <img class="story-media-img" src="assets/img/editors-pick-img.jpg" alt="Athletes celebrating under fireworks" width="397" height="265" loading="lazy">
+                <span class="story-tag">Sports</span>
+              </div>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Tokyo Organizers Insist the Olympics Will Go Ahead in 2021</a>
+              </h3>
+              <p class="story-dek">
+                Officials say vaccines, testing and limited crowds can make the
+                postponed Games safe.
+              </p>
+            </article>
+            <article class="col story">
+              <div class="story-media">
+                <img class="story-media-img" src="assets/img/politic-img.jpg" alt="City skyline at dusk" width="500" height="333" loading="lazy">
+                <span class="story-tag">U.S.</span>
+              </div>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">California's Tier Map Explained as Purple Counties Face Curfew</a>
+              </h3>
+              <p class="story-dek">
+                More than 90 percent of California's population lives in
+                "purple" counties under the tiered system.
+              </p>
+            </article>
+            <article class="col story">
+              <div class="story-media">
+                <img class="story-media-img" src="assets/img/culture-concert.jpg" alt="Performer on stage with dancers" width="397" height="265" loading="lazy">
+                <span class="story-tag">Culture</span>
+              </div>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">The Streaming Shows Everyone Binged in Lockdown</a>
+              </h3>
+              <p class="story-dek">
+                From true crime to cooking competitions, these are the series
+                that kept America company.
+              </p>
+            </article>
+            <article class="col story">
+              <div class="story-media">
+                <img class="story-media-img" src="assets/img/health-therapy.jpg" alt="Physical therapy session" width="500" height="333" loading="lazy">
+                <span class="story-tag">Health</span>
+              </div>
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">How to Stay Active When Gyms Close Again</a>
+              </h3>
+              <p class="story-dek">
+                Trainers share simple routines you can do at home with no
+                equipment.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- ============ WORLD ============ -->
+        <section class="band px-3 px-md-4" id="world" aria-labelledby="world-title">
+          <h2 class="band-title band-title-plain" id="world-title">World</h2>
+          <div class="row g-4">
+            <article class="col-sm-6 col-lg-4 story">
+              <img src="assets/img/world-img.jpg" alt="Historic red-brick building at sunset" width="500" height="333" loading="lazy">
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Age of Anxiety: 10 Stats on How Stressed Americans Are During COVID-19</a>
+              </h3>
+            </article>
+            <article class="col-sm-6 col-lg-4 story">
+              <img src="assets/img/editors-pick-img.jpg" alt="Crowd celebrating under fireworks" width="397" height="265" loading="lazy">
+              <h3 class="story-title">
+                <a href="#" class="stretched-link story-link">Europe Weighs a Holiday Season With Tighter Restrictions</a>
+              </h3>
+            </article>
+            <div class="col-lg-4">
+              <ul class="list-unstyled story-list mb-0">
+                <li class="story-list-item">
+                  <article class="story story-row">
+                    <img class="story-row-img" src="assets/img/world-side-img.jpg" alt="Man in a suit seated at a desk" width="95" height="95" loading="lazy">
+                    <h3 class="story-title-sm">
+                      <a href="#" class="stretched-link story-link">Russia Reports Record Daily Cases as Hospitals Fill Up</a>
+                    </h3>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row">
+                    <img class="story-row-img" src="assets/img/more-stories-img.jpg" alt="Supporters cheering at a rally" width="95" height="95" loading="lazy">
+                    <h3 class="story-title-sm">
+                      <a href="#" class="stretched-link story-link">World Leaders React to the U.S. Election Result</a>
+                    </h3>
+                  </article>
+                </li>
+                <li class="story-list-item">
+                  <article class="story story-row">
+                    <img class="story-row-img" src="assets/img/politic-img.jpg" alt="City skyline at dusk" width="500" height="333" loading="lazy">
+                    <h3 class="story-title-sm">
+                      <a href="#" class="stretched-link story-link">Saudi Arabia Hosts a Virtual G20 Summit</a>
+                    </h3>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SUBSCRIBE / NEWSLETTER ============ -->
+        <section class="subscribe-band" id="subscribe" aria-label="Subscribe and newsletter">
+          <div class="px-3 px-md-4 py-5">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-7">
+              <h2 class="band-title band-title-plain">Subscribe</h2>
+              <div class="subscribe-card">
+                <div class="cover-stack" aria-hidden="true">
+                  <img
+                    class="cover-img cover-back"
+                    src="assets/img/image-bottom.jpg"
+                    alt=""
+                    width="170"
+                    height="227"
+                    loading="lazy">
+                  <img
+                    class="cover-img cover-front"
+                    src="assets/img/image-top.jpg"
+                    alt=""
+                    width="360"
+                    height="480"
+                    loading="lazy">
+                </div>
+                <div>
+                  <h3 class="subscribe-heading">
+                    In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                  </h3>
+                  <p class="text-muted-strong mb-1">All Access + Weekly Delivery</p>
+                  <p class="text-muted-strong">Choose a membership that's perfect for you.</p>
+                  <a href="#" class="btn btn-brand px-4">
+                    Subscribe <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                  </a>
                 </div>
               </div>
-              <div class="row mx-0 sec1-col3-space">
-                <div class="col-lg-12">
-                  <form action="#">
+            </div>
+
+            <div class="col-lg-5">
+              <h2 class="band-title band-title-plain">Newsletter</h2>
+              <div class="newsletter-box">
+                <img
+                  class="newsletter-img"
+                  src="assets/img/newsletter-img.png"
+                  alt=""
+                  width="179"
+                  height="265"
+                  loading="lazy">
+                <div class="newsletter-body">
+                  <h3 class="subscribe-heading">The Starting 5</h3>
+                  <p class="text-muted-strong">
+                    See why nearly a quarter of a million subscribers begin
+                    their day with the Starting 5.
+                  </p>
+                  <form class="js-newsletter-form" action="#" novalidate>
+                    <label class="visually-hidden" for="starting5-email">Email address</label>
                     <input
-                      class="form-control rounded-0"
-                      type="text"
+                      class="form-control rounded-0 mb-2"
+                      id="starting5-email"
+                      name="email"
+                      type="email"
                       placeholder="Email address"
-                    />
+                      autocomplete="email"
+                      required>
+                    <button class="btn btn-brand w-100" type="submit">
+                      Free sign up <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                    <p class="form-feedback mb-0" role="status" aria-live="polite"></p>
                   </form>
                 </div>
               </div>
-              <div class="row mx-0 sec1-col3-space">
-                <div class="col-lg-12">
-                  <button
-                    class="btn btn-danger btn-lg btn-block sec1-col3-email-btn b-0 font-weight-bold text-uppercase"
-                    type="submit"
-                  >
-                    Free sign up >
-                  </button>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div class="row mx-0">
-        <div class="col-lg-12 d-flex align-items-center justify-content-center">
-          <img
-            class="logo-n no-margin"
-            src="assets/img/logo-n1.png"
-            alt="logo-n"
-          />
-          <p
-            class="sec1-col2-email-p sec1-footer-p text-uppercase font-weight-bold"
-          >
-            In the magazine
-          </p>
-        </div>
-      </div>
-      <div class="row mx-0">
-        <div class="col-lg-12">
-          <hr />
-        </div>
-      </div>
-      <section class="in-the-magazine row">
-        <h5 class="d-none">In the magazine section</h5>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <article class="magazine-art">
-            <h5 class="d-none">In the Magazine Article</h5>
-            <img src="assets/img/in-the-magazine-img.jpg" alt="Trump" />
-            <div class="d-flex align-items-center">
-              <p class="text-uppercase cover text-white">cover</p>
-              <p class="text-uppercase">news</p>
-            </div>
-            <p
-              class="underline font-weight-bold text-capitalize font-weight-bold"
-            >
-              trump has 70 days to undermine joe biden, even if he eventually
-              concedes
-            </p>
-          </article>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <article class="magazine-art">
-            <h5 class="d-none">In the Magazine Article</h5>
-            <img src="assets/img/in-the-magazine-img.jpg" alt="Trump" />
-            <div class="d-flex align-items-center">
-              <p class="text-uppercase cover text-white">cover</p>
-              <p class="text-uppercase">news</p>
-            </div>
-            <p
-              class="underline font-weight-bold text-capitalize font-weight-bold"
-            >
-              trump has 70 days to undermine joe biden, even if he eventually
-              concedes
-            </p>
-          </article>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <article class="magazine-art">
-            <h5 class="d-none">In the Magazine Article</h5>
-            <img src="assets/img/in-the-magazine-img.jpg" alt="Trump" />
-            <div class="d-flex align-items-center">
-              <p class="text-uppercase cover text-white">cover</p>
-              <p class="text-uppercase">news</p>
-            </div>
-            <p
-              class="underline font-weight-bold text-capitalize font-weight-bold"
-            >
-              trump has 70 days to undermine joe biden, even if he eventually
-              concedes
-            </p>
-          </article>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <article class="magazine-art">
-            <h5 class="d-none">In the Magazine Article</h5>
-            <img src="assets/img/in-the-magazine-img.jpg" alt="Trump" />
-            <div class="d-flex align-items-center">
-              <p class="text-uppercase cover text-white">cover</p>
-              <p class="text-uppercase">news</p>
-            </div>
-            <p
-              class="underline font-weight-bold text-capitalize font-weight-bold"
-            >
-              trump has 70 days to undermine joe biden, even if he eventually
-              concedes
-            </p>
-          </article>
-        </div>
-      </section>
-      <div class="row mx-0">
-        <div class="col-lg-12 d-flex align-items-center justify-content-center">
-          <img
-            class="logo-n no-margin"
-            src="assets/img/logo-n1.png"
-            alt="logo-n"
-          />
-          <p
-            class="sec1-col2-email-p sec1-footer-p text-uppercase font-weight-bold"
-          >
-            Editor's pick
-          </p>
-        </div>
-      </div>
-      <div class="row mx-0">
-        <div class="col-lg-12">
-          <hr />
-        </div>
-      </div>
-      <section class="editors-pick">
-        <h5 class="d-none">Editor's Pick Section</h5>
-        <div class="row mx-0 editors-row font-weight-bold">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
-            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row mx-0 editors-row font-weight-bold">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="row mx-0 art-divimg-1 position-relative">
-              <img
-                class="art-img-1"
-                src="assets/img/editors-pick-img.jpg"
-                alt="article-image"
-              />
-              <p
-                class="art-img-1-p text-uppercase font-weight-bold position-absolute"
-              >
-                <b>u. s.</b>
-              </p>
-            </div>
-            <div class="description">
-              <p class="underline font-weight-bold">
-                California's Tier Map Explained as Purple Counties Face
-                Month-Long Curfew
-              </p>
-              <p class="font-weight-normal">
-                More than 90 percent of California's population are living in
-                "purple counties" based on the tiered system.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="row mx-0">
-        <div class="col-lg-12">
-          <hr />
-        </div>
-      </div>
-      <section class="world-section row">
-        <h5 class="d-none">World Section</h5>
-        <div class="col-lg-12 world-title">
-          <b>World</b>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-side p-0">
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div
-              class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0 d-flex"
-            >
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="row mx-0">
-        <div class="col-lg-12">
-          <hr />
-        </div>
-      </div>
-      <section class="world-section row">
-        <h5 class="d-none">World Section</h5>
-        <div class="col-lg-12 world-title">
-          <b>World</b>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-side p-0">
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="row mx-0">
-        <div class="col-lg-12">
-          <hr />
-        </div>
-      </div>
-      <section class="world-section row">
-        <h5 class="d-none">World Section</h5>
-        <div class="col-lg-12 world-title">
-          <b>World</b>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-side p-0">
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="row mx-0">
-        <div class="col-lg-12">
-          <hr />
-        </div>
-      </div>
-      <section class="row mx-0 world-section last-world-section">
-        <h5 class="d-none">World Section</h5>
-        <div class="col-lg-12 world-title">
-          <b>World</b>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-art font-weight-bold">
-          <img src="assets/img/world-img.jpg" alt="wa-img" />
-          <p class="underline font-weight-bold">
-            Age of Anxiety: 10 Stats on How Stressed Americans Are During
-            COVID-19
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4 world-side p-0">
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-          <div class="row mx-0">
-            <div class="col-lg-12">
-              <hr />
-            </div>
-          </div>
-          <div
-            class="row mx-0 world-side-row flex-nowrap d-flex font-weight-bold"
-          >
-            <div class="col-lg-6 col-md-5 col-auto world-side-img w-100">
-              <img src="assets/img/world-side-img.jpg" alt="world-side-img" />
-            </div>
-            <div class="col-lg-6 col-md-7 col-6 underline font-weight-bold p-0">
-              <p>
-                Russell Wilson Equals NFL Record Held by Drew Brees and Brett
-                Favre
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="subscribe-footer bg-light">
-        <div class="row mx-0">
-          <div class="col-lg-7 col-md-12 subscribe-title">
-            <div class="row mx-0">
-              <div class="col-lg-12 col-md-12 p-0-left">
-                <b>Subscribe</b>
-              </div>
-            </div>
-            <div class="row mx-0 justify-content-center">
-              <div class="col-lg-4 col-md-3 img-container">
-                <img
-                  class="image-bottom position-absolute w-100"
-                  src="assets/img/image-bottom.jpg"
-                  alt="subscribe-img"
-                />
-                <img
-                  class="image-top position-relative"
-                  src="assets/img/image-top.jpg"
-                  alt="subscribe-img"
-                />
-              </div>
-              <div class="col-lg-8 col-md-9 subscribe-info my-auto">
-                <h3 class="font-weight-bolder text-dark">
-                  In-depth Stories You Don't See Elsewhere About Topics You Want
-                  to Read!
-                </h3>
-                <p class="text-secondary">All Access + Weekly Delivery</p>
-                <p class="text-secondary">
-                  Choose A Membership That's Perfect for You!
-                </p>
-                <button
-                  class="subscribe-btn btn btn-danger sec1-col3-email-btn b-0 font-weight-bold text-uppercase"
-                  type="submit"
-                >
-                  subscribe >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-12 subscribe-title">
-            <div class="row mx-0">
-              <div class="col-lg-12 col-md-12 p-0-left">
-                <b>Newsletter</b>
-              </div>
-            </div>
-            <div class="row mx-0 newl-row">
-              <div class="col-lg-6 col-md-4 col-sm-3 col-xs-3 pl-0">
-                <img
-                  class="h-100 w-100"
-                  src="assets/img/newsletter-img.png"
-                  alt="newsletter"
-                />
-              </div>
-              <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 p-0-left">
-                <div class="row mx-0">
-                  <div class="col-lg-12 col-md-12">
-                    <h3 class="font-weight-bolder h3-subs-col-right text-dark">
-                      <b>The Starting 5</b>
-                    </h3>
-                  </div>
-                </div>
-                <div class="row mx-0">
-                  <div class="col-lg-12 col-md-12">
-                    <b class="p-subs-col-right">
-                      See why nearly a quarter of a million subscribers begin
-                      their day with the Starting 5.
-                    </b>
-                  </div>
-                </div>
-                <div class="row mx-0 sec1-col3-space subs-div-form">
-                  <div class="col-lg-12">
-                    <form action="#">
-                      <input
-                        class="form-control sec1-col3-input"
-                        type="text"
-                        placeholder="Email address"
-                      />
-                    </form>
-                  </div>
-                </div>
-                <div class="row mx-0 sec1-col3-space">
-                  <div class="col-lg-12">
-                    <button
-                      class="btn btn-danger btn-lg btn-block sec1-col3-email-btn b-0 font-weight-bold px-0 text-uppercase"
-                      type="submit"
-                    >
-                      Free sign up &gt;
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mx-0"></div>
-      </section>
-      <footer>
-        <div class="row mx-0 d-flex first-footer">
-          <div class="p-0-right p-1">
+        </section>
+      </main>
+
+      <!-- ============ FOOTER ============ -->
+      <footer class="site-footer px-3 px-md-4 py-4">
+        <div class="footer-top">
+          <a href="index.html" class="footer-brand">
             <img
-              class="logo-2"
+              class="footer-logo"
               src="assets/img/newsweeklogo.png"
-              alt="neews-week-logo-2"
-            />
-          </div>
-          <div class="p-0-left my-auto p-2 text-secondary">
-            <p class="p-footer-copy">© 2020 NEWSWEEK DIGITAL LLC</p>
-          </div>
-          <div class="footer-icons p-1 ml-auto">
-            <div class="row mx-0 row-icons text-secondary">
-              <div class="col-auto div-icon pl-0">
-                <i class="fab fa-facebook-square footer-icon"></i>
-              </div>
-              <div class="col-auto div-icon pl-0">
-                <i class="fab fa-twitter footer-icon"></i>
-              </div>
-              <div class="col-auto div-icon pl-0">
-                <i class="fab fa-instagram footer-icon"></i>
-              </div>
-              <div class="col-auto div-icon pl-0">
-                <i class="fab fa-tumblr footer-icon"></i>
-              </div>
-              <div class="col-auto div-icon pl-0">
-                <i class="fab fa-linkedin-in footer-icon"></i>
-              </div>
-            </div>
-          </div>
+              alt="Newsweek"
+              width="1000"
+              height="152"
+              loading="lazy">
+          </a>
+          <p class="footer-copy mb-0">© <span id="current-year">2020</span> Newsweek Digital LLC</p>
+          <ul class="social-list list-unstyled mb-0">
+            <li><a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+            <li><a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a class="social-link" href="https://www.tumblr.com/" target="_blank" rel="noopener noreferrer" aria-label="Tumblr"><i class="fa-brands fa-tumblr" aria-hidden="true"></i></a></li>
+            <li><a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          </ul>
         </div>
-        <hr />
-        <div class="row mx-0 footer-options text-secondary">
-          <div class="col-auto pr-0 font-weight-bold"><p>Edition:</p></div>
-          <div class="col-auto pr-0"><p>U.S. Edition</p></div>
-          <div class="col-auto pr-0"><p>日本</p></div>
-          <div class="col-auto pr-0"><p>Pakistan</p></div>
-          <div class="col-auto pr-0"><p>Polska</p></div>
-          <div class="col-auto pr-0"><p>România</p></div>
-        </div>
-        <div class="row mx-0 footer-options text-secondary">
-          <div class="col-auto pr-0"><p>About us</p></div>
-          <div class="col-auto pr-0"><p>|</p></div>
-          <div class="col-auto pr-0"><p>About us</p></div>
-          <div class="col-auto pr-0"><p>|</p></div>
-          <div class="col-auto pr-0"><p>About us</p></div>
-          <div class="col-auto pr-0"><p>|</p></div>
-          <div class="col-auto pr-0"><p>About us</p></div>
-          <div class="col-auto pr-0"><p>|</p></div>
-          <div class="col-auto pr-0"><p>About us</p></div>
-          <div class="col-auto pr-0"><p>|</p></div>
-          <div class="col-auto pr-0"><p>About us</p></div>
-          <div class="col-auto pr-0"><p>|</p></div>
-        </div>
+
+        <nav class="footer-nav" aria-label="Editions">
+          <span class="footer-nav-label">Edition:</span>
+          <ul class="list-unstyled mb-0">
+            <li><a class="footer-link" href="#">U.S. Edition</a></li>
+            <li><a class="footer-link" href="#" lang="ja">日本</a></li>
+            <li><a class="footer-link" href="#">Pakistan</a></li>
+            <li><a class="footer-link" href="#" lang="pl">Polska</a></li>
+            <li><a class="footer-link" href="#" lang="ro">România</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav footer-nav-links" aria-label="Company">
+          <ul class="list-unstyled mb-0">
+            <li class="footer-links-item"><a class="footer-link" href="#">About Us</a></li>
+            <li class="footer-links-item"><a class="footer-link" href="#">Corrections</a></li>
+            <li class="footer-links-item"><a class="footer-link" href="#">Contact Us</a></li>
+            <li class="footer-links-item"><a class="footer-link" href="#">Editorial Guidelines</a></li>
+            <li class="footer-links-item"><a class="footer-link" href="#">Advertise</a></li>
+            <li class="footer-links-item"><a class="footer-link" href="#">Copyright</a></li>
+            <li class="footer-links-item"><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+            <li class="footer-links-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
       </footer>
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <button class="back-to-top" type="button" aria-label="Back to top" hidden>
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
+      defer
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
   </body>
 </html>
